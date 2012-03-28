@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/122/trunk/cms_rails/spec/requests
+END
+login_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/122/trunk/cms_rails/spec/requests/login_spec.rb
+END
+administrator_usecase_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/38/trunk/cms_rails/spec/requests/administrator_usecase_spec.rb
+END
+vistor_usecase_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/30/trunk/cms_rails/spec/requests/vistor_usecase_spec.rb
+END
+resource_usecase_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/115/trunk/cms_rails/spec/requests/resource_usecase_spec.rb
+END
+contributor_usecase_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/32/trunk/cms_rails/spec/requests/contributor_usecase_spec.rb
+END
+manager_usecase_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/34/trunk/cms_rails/spec/requests/manager_usecase_spec.rb
+END

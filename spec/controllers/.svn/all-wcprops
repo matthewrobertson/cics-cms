@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/153/trunk/cms_rails/spec/controllers
+END
+users_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/138/trunk/cms_rails/spec/controllers/users_controller_spec.rb
+END
+sessions_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/127/trunk/cms_rails/spec/controllers/sessions_controller_spec.rb
+END
+projects_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/153/trunk/cms_rails/spec/controllers/projects_controller_spec.rb
+END
+resources_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/153/trunk/cms_rails/spec/controllers/resources_controller_spec.rb
+END
+announcements_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/153/trunk/cms_rails/spec/controllers/announcements_controller_spec.rb
+END

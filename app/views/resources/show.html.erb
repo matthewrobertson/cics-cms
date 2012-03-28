@@ -1,0 +1,43 @@
+<h1>Resource</h1>
+
+<p>
+  <b>User</b><br>
+  <%= @resource.user_id %>
+</p>
+
+<p>
+  <b>Project</b><br>
+  <%= @resource.project_id %>
+</p>
+
+<p>
+  <b>Name</b><br>
+  <%= @resource.name %>
+</p>
+
+<p>
+  <b>Version</b><br>
+  <%= @resource.version %>
+</p>
+
+<p>
+  <b>Description</b><br>
+  <%= @resource.description %>
+</p>
+
+<p>
+  <b>Mime</b><br>
+  <%= @resource.mime %>
+</p>
+
+<p>
+  <b>Get</b><br>
+  <%= link_to @resource.file_name, @resource.file.url %>
+</p>
+
+
+<div class="form-actions">
+  <%= link_to 'Back', project_path(@resource.project), :class => 'btn'  %>
+  <%= link_to 'Edit', edit_resource_path(@resource), :class => 'btn' %>
+  <%= link_to 'Delete', resource_path(@resource), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+</div>

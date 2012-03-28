@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/175/trunk/cms_rails/app/models
+END
+ability.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/150/trunk/cms_rails/app/models/ability.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/168/trunk/cms_rails/app/models/user.rb
+END
+contribution.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/165/trunk/cms_rails/app/models/contribution.rb
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/4/trunk/cms_rails/app/models/.gitkeep
+END
+project.rb
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/175/trunk/cms_rails/app/models/project.rb
+END
+admin_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/94/trunk/cms_rails/app/models/admin_user.rb
+END
+resource.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/150/trunk/cms_rails/app/models/resource.rb
+END
+announcement.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/116/trunk/cms_rails/app/models/announcement.rb
+END

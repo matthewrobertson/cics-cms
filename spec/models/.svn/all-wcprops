@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/150/trunk/cms_rails/spec/models
+END
+project_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/116/trunk/cms_rails/spec/models/project_spec.rb
+END
+admin_user_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/85/trunk/cms_rails/spec/models/admin_user_spec.rb
+END
+resource_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/142/trunk/cms_rails/spec/models/resource_spec.rb
+END
+announcement_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/116/trunk/cms_rails/spec/models/announcement_spec.rb
+END
+ability_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/150/trunk/cms_rails/spec/models/ability_spec.rb
+END
+user_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/111/trunk/cms_rails/spec/models/user_spec.rb
+END

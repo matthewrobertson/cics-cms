@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts
+END
+mobile_app.js
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts/mobile_app.js
+END
+cms_rails.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts/cms_rails.js
+END
+application.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts/application.js
+END
+active_admin.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/85/trunk/cms_rails/app/assets/javascripts/active_admin.js
+END
+bootstrap.js.coffee
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/114/trunk/cms_rails/app/assets/javascripts/bootstrap.js.coffee
+END

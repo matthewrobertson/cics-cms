@@ -1,0 +1,233 @@
+@import "bootstrap_and_overrides";
+@import "clearfix";
+@import "footer";
+@import "users";
+
+
+
+.default-theme {
+background-color: #ffffff;
+
+}
+
+.logo{
+
+width: 105px;
+height: 20px;
+background: no-repeat;
+background-image: url(projectbox_logo_top_bar.png) ;
+
+float: left;
+display: block;
+padding: 8px 20px 2px;
+margin-top: 10px;
+margin-left: 20px;
+font-size: 20px;
+font-weight: 200;
+line-height: 1;
+color: white;
+
+}
+
+
+
+.front-signin .sign-up {
+position: absolute;
+top: 82px;
+left: 12px;
+margin: 0;
+width: 276px;
+}
+.front-signin .signup_txt{
+display: inline;
+margin: 0;
+font-size: 11px;
+line-height: 13px;
+color: #999;
+-webkit-text-shadow: 0 1px 0 rgba(255,255,255,.6);
+-moz-text-shadow: 0 1px 0 rgba(255,255,255,.6);
+text-shadow: 0 1px 0 rgba(255, 255, 255, .6);
+}
+
+.front-welcome {
+position: relative;
+top: 0;
+left: 0;
+display: block;
+width: 520px;
+height: 116px;
+background: black url(city.png) no-repeat left top;
+border: 0;
+-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.35);
+-moz-box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.35);
+box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.35);
+
+}
+
+.front-welcome-text {
+position: relative;
+bottom: 0;
+left: 0;
+width: 400px;
+padding: 12px;
+font-size: 20px;
+font-weight: 300;
+line-height: 22px;
+color: #EEE;
+text-align: left;
+text-shadow: black 3px 3px 3px;
+
+}
+.front-welcome-text h1 {
+margin-bottom: 3px;
+font-size: 20px;
+font-weight: 700;
+color: white;
+}
+h1 {
+font-size: 24px;
+font-weight: bold;
+line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+color: #333;
+text-rendering: optimizeLegibility;
+}
+
+
+.front-signin, .front-signup, .project-listing-header {
+background: white;
+background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,white),color-stop(100%,#DDD));
+background: -webkit-linear-gradient(top,white 0,#DDD 100%);
+background: -moz-linear-gradient(top,white 0,#DDD 100%);
+background: -ms-linear-gradient(top,white 0,#DDD 100%);
+background: -o-linear-gradient(top,white 0,#DDD 100%);
+background: linear-gradient(top,white 0,#DDD 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#dddddd',GradientType=0);
+border-left: solid 1px #EEE;
+border-right: solid 1px #EEE;
+border-bottom: solid 1px #CCC;
+
+-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.55);
+-moz-box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.55);
+box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.55);
+
+}
+.front-welcome, .front-signin, .front-signup {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.front-signin {
+position: relative;
+top: 0;
+width: 300px;
+height: 100px;
+}
+
+.front-signin .username {
+position: relative;
+top: 12px;
+left: 12px;
+width: 276px;
+}
+
+.front-signin .password {
+width: 100%;
+
+}
+
+
+.front-signin .username .text-input {
+height: 20px;
+width: 266px;
+}
+
+.front-signin .username .password-input {
+height: 20px;
+width: 200px;
+}
+
+.front-signin .password-signin {
+position: absolute;
+top: 48px;
+left: 12px;
+width: 276px;
+}
+
+
+.flex-table {
+width: 100%;
+}
+
+.flex-table-primary {
+width: 99%;
+padding-right: 5px;
+}
+
+.flex-table-form {
+float: left;
+width: 100%;
+}
+
+.flex-table-input {
+display: block;
+width: 100%;
+line-height: normal;
+height: 30px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-ms-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+.flex-table-secondary {
+width: 1%;
+max-width: 1%;
+}
+
+.front-signin .submit {
+height: 30px;
+-webkit-box-shadow: 0 1px 0 #fff;
+-moz-box-shadow: 0 1px 0 #fff;
+box-shadow: 0 1px 0 #fff;
+}
+
+.flex-table-btn {
+float: right;
+width: auto;
+white-space: nowrap;
+}
+
+input[type="button"], input[type="reset"], input[type="submit"] {
+width: auto;
+height: auto;
+}
+
+
+.flex-table-btn {
+float: right;
+width: auto;
+white-space: nowrap;
+}
+
+.primary-btn, .following.first-hover .follow-btn:hover, .following .follow-btn, .following .follow-button.cancel-hover-style:hover, .following .follow-button {
+color: white;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+background-color: #019AD2;
+background-repeat: repeat-x;
+background-image: -khtml-gradient(linear,left top,left bottom,from(#33bcef),to(#019ad2));
+background-image: -moz-linear-gradient(#33bcef,#019ad2);
+background-image: -ms-linear-gradient(#33bcef,#019ad2);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#33bcef),color-stop(100%,#019ad2));
+background-image: -webkit-linear-gradient(#33bcef,#019ad2);
+background-image: -o-linear-gradient(#33bcef,#019ad2);
+background-image: linear-gradient(#33bcef,#019ad2);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bcef',endColorstr='#019ad2',GradientType=0);
+border-color: #057ED0;
+-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+}
+

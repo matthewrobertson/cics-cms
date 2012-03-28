@@ -1,0 +1,15 @@
+<%= simple_form_for @announcement, :html => { :class => 'form-horizontal' } do |f| %>
+  <fieldset>
+    <legend><%= controller.action_name.capitalize %> Announcement</legend>
+    
+    <%= f.input :user_id %>
+    <%= f.input :topic %>
+    <%= f.input :content, :as => 'text' %>
+    <%= f.input :kind %>
+    
+    <div class="form-actions">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', announcements_path, :class => 'btn' %>
+    </div>
+  </fieldset>
+<% end %>

@@ -1,0 +1,34 @@
+
+
+
+ <div class="front-welcome"></div>
+
+<div class="front-signin" >
+<%= form_tag sessions_path, :class =>"signin" do %>
+
+      <div class="username">
+          <input type="text" class="text-input" title="Email" autocomplete="on" name="email" placeholder="Email">
+        </div>
+
+        <table class="flex-table password-signin">
+          <tbody>
+            <tr>
+              <td class="flex-table-primary">
+                <div class="password flex-table-form">
+                  <input type="password" class="text-input flex-table-input" name="password" title="Password" placeholder="Password">
+                </div>
+              </td>
+               <td class ="flex-table-secondary">
+                 <input type="submit" class="button primary-btn" value="Sign in" tabindex="0">
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+            <div class="sign-up signup_txt">
+          Don't have an account? <%= link_to "sign up", new_user_path %>
+        </div>
+<% end %>
+</div>
+
+      

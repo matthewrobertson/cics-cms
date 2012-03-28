@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: cms_production
+  host: localhost
+  pool: 5
+  username: blog
+  password: secret
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: cms_production
+  host: localhost
+  pool: 5
+  username: blog
+  password: secret
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: cms_production
+  host: localhost
+  pool: 5
+  username: blog
+  password: secret

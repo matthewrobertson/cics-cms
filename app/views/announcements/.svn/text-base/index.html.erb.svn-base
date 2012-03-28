@@ -1,0 +1,24 @@
+<h1>Announcements</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>User</th>
+      <th>Created at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @announcements.each do |announcement| %>
+      <tr>
+        <td><%= announcement.id %></td>
+        <td><%= link_to announcement.user_id, announcement_path(announcement) %></td>
+        <td><%= announcement.created_at %></td>
+        <td>
+          <%= link_to 'Edit', edit_announcement_path(announcement), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', announcement_path(announcement), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

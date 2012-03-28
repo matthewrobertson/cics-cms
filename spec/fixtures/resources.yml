@@ -1,0 +1,21 @@
+one:
+  user_id=1
+  project_id=1
+  name="file.txt"
+  version=1
+  description="Test file for project"
+  location="/path_to_location"
+  type="text"
+  created_at="2012-02-15 12:30:24"
+  updated_at="2012-02-16 12:31:50"
+
+two:
+  user_id=2
+  project_id=1
+  name="file2.txt"
+  version=1
+  description="Test file for project"
+  location="/path_to_location2"
+  type="text"
+  created_at="2012-02-15 12:40:24"
+  updated_at="2012-02-16 12:51:50"

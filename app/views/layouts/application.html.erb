@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectBox</title>
+    <%= csrf_meta_tags %>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <%= stylesheet_link_tag "application", :media => "all" %>
+
+    <!-- Le fav and touch icons -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+  </head>
+  <body class="default-theme">
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+          <div class="container-fluid">
+          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="logo" href="#"></a>
+
+          <div class="container-fluid nav-collapse">
+            <ul class="nav">
+
+
+            </ul>
+
+            <p class="navbar-text pull-right">
+                <% if current_user %>
+	                <ul class="nav pull-right">
+
+                        <% if current_user.notifications > 0 %>
+                            <li class="divider-vertical"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <% if current_user.notifications > 0 %>
+                                    <i class="icon-white icon-envelope"></i>
+					<%= current_user.notifications %></a>
+                                     <ul class="dropdown-menu">
+                                        <li><%= link_to 'Notifications', "/notifications" %></li>
+                                    </ul>
+                                <%end%>
+                            </li>
+                        <%end%>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-white icon-user"></i><%= current_user.name %></a>
+                            <ul class="dropdown-menu">
+
+                                <li><%= link_to (edit_user_path(current_user)) do %>
+				<i class=" icon-black icon-cog"></i>Settings<%end%>
+				</li>
+
+                                <li><%= link_to (logout_path) do %>
+				<i class=" icon-black icon-off"></i>Logout <%end%>
+				</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+
+                <% else %>
+          	    Hey Stranger <%= link_to "login", login_path %> or <%= link_to "register", new_user_path %>
+                <% end %>
+            </p>
+
+          </div><!--/.nav-collapse -->
+
+        </div>
+      </div>
+    </div>
+	
+	
+	
+    <div class="container-fluid">
+      <% flash.each do |name, msg| %>
+        <div class="alert alert-<%= name == :notice ? "success" : "error" %>">
+            <a class="close" data-dismiss="alert">×</a>
+          <%= msg %>
+        </div>
+      <% end %>
+
+      <div class="row-fluid">
+        <div class="span2">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <% if current_user %>
+                  <li class="nav-header">Explore</li>
+                  <li>
+                   <%= link_to(  user_path(current_user) ) do %>
+                    <i class="icon-black icon-home"></i>Dashboard
+                    <% end %>
+                  </li>
+                  <li><%= link_to(  "/search" ) do %>
+                    <i class="icon-black icon-search"></i>Search
+                    <% end %>
+                  </li>
+                  <li>
+                   <%= link_to (users_path) do %>
+                    <i class="icon-black icon-user"></i>Members
+                    <% end %>
+                  </li>
+                   <li><%= link_to (projects_path) do %>
+                    <i class="icon-black icon-folder-open"></i>Projects
+                    <% end %>
+                  </li>
+                   <li><%= link_to "#" do %>
+                    <i class="icon-black icon-picture"></i>Resources
+                    <% end %>
+                  </li>
+                   <li><%= link_to ( "/notifications") do %>
+                    <i class="icon-black icon-envelope"></i>Notifications
+                    <% end %>
+                  </li>
+                   <li><%= link_to( "/help" ) do %>
+                    <i class="icon-black icon-plus"></i>Help
+                    <% end %>
+                  </li>
+              <% else %>
+                   <li class="nav-header">Discover</li>
+                  <li>
+                   <%= link_to (users_path) do %>
+                    <i class="icon-black icon-user"></i>About
+                    <% end %>
+                  </li>
+                   <li><%= link_to ("/help") do %>
+                    <i class="icon-black icon-picture"></i>Help
+                    <% end %>
+                  </li>
+                  <%end%>
+
+
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <%= yield %>
+        </div>
+      </div><!--/row-->
+
+      <footer class='clearfix'> 
+        <p>&copy; ProjectBox, CICS530-430, MSS, University of British Columbia 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag "application" %>
+
+  </body>
+</html>

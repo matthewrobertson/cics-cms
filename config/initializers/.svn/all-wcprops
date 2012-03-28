@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/147/trunk/cms_rails/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/4/trunk/cms_rails/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/4/trunk/cms_rails/config/initializers/session_store.rb
+END
+devise.rb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/103/trunk/cms_rails/config/initializers/devise.rb
+END
+active_admin.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/128/trunk/cms_rails/config/initializers/active_admin.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/4/trunk/cms_rails/config/initializers/secret_token.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4/trunk/cms_rails/config/initializers/backtrace_silencers.rb
+END
+time_formats.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/120/trunk/cms_rails/config/initializers/time_formats.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/trunk/cms_rails/config/initializers/mime_types.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4/trunk/cms_rails/config/initializers/wrap_parameters.rb
+END
+simple_form.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/147/trunk/cms_rails/config/initializers/simple_form.rb
+END
