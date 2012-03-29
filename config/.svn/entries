@@ -239,16 +239,16 @@ matthewrobertson03@gmail.com
 environments
 dir
 
-ngnix.conf
+nginx.conf
 file
-181
+184
 
 
 
 2012-03-28T07:26:18.000000Z
 919f7c18efd09ef7025c76327a81e7d1
-2012-03-28T09:08:41.295836Z
-181
+2012-03-29T23:03:23.231998Z
+184
 matthewrobertson03@gmail.com
 
 
@@ -272,6 +272,30 @@ matthewrobertson03@gmail.com
 
 
 616
+
+ngnix.conf
+file
+184
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
 
 unicorn_init.sh
 file
@@ -309,14 +333,14 @@ has-props
 
 deploy.rb
 file
-181
+184
 
 
 
-2012-03-28T07:39:12.000000Z
-6794b4357de74c57e6f1faeb39d09ab9
-2012-03-28T09:08:41.295836Z
-181
+2012-03-28T09:28:32.000000Z
+5bef845201cd90e8129f1f7b8909abfb
+2012-03-29T23:03:23.231998Z
+184
 matthewrobertson03@gmail.com
 
 
@@ -339,7 +363,7 @@ matthewrobertson03@gmail.com
 
 
 
-1454
+1443
 
 example.database.yml
 file

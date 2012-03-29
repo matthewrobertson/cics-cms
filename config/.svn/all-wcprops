@@ -39,11 +39,11 @@ svn:wc:ra_dav:version-url
 V 53
 /svn/!svn/ver/4/trunk/cms_rails/config/environment.rb
 END
-ngnix.conf
+nginx.conf
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/!svn/ver/181/trunk/cms_rails/config/ngnix.conf
+/svn/!svn/ver/184/trunk/cms_rails/config/nginx.conf
 END
 unicorn_init.sh
 K 25
@@ -55,7 +55,7 @@ deploy.rb
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/!svn/ver/181/trunk/cms_rails/config/deploy.rb
+/svn/!svn/ver/184/trunk/cms_rails/config/deploy.rb
 END
 example.database.yml
 K 25

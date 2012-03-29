@@ -30,14 +30,14 @@ END
 .gitignore
 K 25
 svn:wc:ra_dav:version-url
-V 42
-/svn/!svn/ver/4/trunk/cms_rails/.gitignore
+V 44
+/svn/!svn/ver/184/trunk/cms_rails/.gitignore
 END
 Gemfile
 K 25
 svn:wc:ra_dav:version-url
 V 41
-/svn/!svn/ver/181/trunk/cms_rails/Gemfile
+/svn/!svn/ver/184/trunk/cms_rails/Gemfile
 END
 config.ru
 K 25

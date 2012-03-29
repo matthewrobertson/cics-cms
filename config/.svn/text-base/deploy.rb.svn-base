@@ -8,8 +8,8 @@ set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
-set :scm, :subversion
-set :repository, "http://cics530-430-cms.googlecode.com/svn/trunk/"
+set :scm, :git
+set :repository, "git@github.com:matthewrobertson/cics-cms.git"
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
