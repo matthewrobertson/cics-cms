@@ -45,6 +45,7 @@ Resource.delete_all
 		a.content = Faker::Company.bs
 		a.kind = "project announcement"
 		a.user = u
+		a.project = p
 		a.save
 		
 		if p		
@@ -64,6 +65,17 @@ Resource.delete_all
 
 	end
 end
+
+admin = User.new(	
+			:full_name 	=> "admin admin",
+			:pref_name 	=> "admin",
+			:email		=> "admin@gmail.com",
+			:admin		=> true,
+			:password	=> "admin",
+			:password_confirmation => "admin"
+		)
+admin.admin = true
+admin.save
 
 
 	

@@ -1,5 +1,6 @@
 class Project < ActiveRecord::Base
 	has_many :resources
+	has_many :announcements
 	belongs_to :owner, :foreign_key => :owner_id, :class_name => "User"
 	has_many :contributions
   	has_many :users, :through => :contributions

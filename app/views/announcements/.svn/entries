@@ -1,15 +1,15 @@
 10
 
 dir
-180
+203
 https://cics530-430-cms.googlecode.com/svn/trunk/cms_rails/app/views/announcements
 https://cics530-430-cms.googlecode.com/svn
 
 
 
-2012-03-23T09:49:15.634088Z
-168
-bbertka
+2012-03-30T01:41:36.842196Z
+197
+charathsandran@gmail.com
 
 
 
@@ -195,4 +195,38 @@ parucleo@gmail.com
 
 
 494
+
+index.json.rabl
+file
+
+
+
+
+2012-03-30T02:06:32.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2012-03-30T01:41:36.842196Z
+197
+charathsandran@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
 

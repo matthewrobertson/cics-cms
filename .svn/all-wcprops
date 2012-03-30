@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/svn/!svn/ver/180/trunk/cms_rails
+/svn/!svn/ver/203/trunk/cms_rails
 END
 Gemfile.lock
 K 25
@@ -31,7 +31,7 @@ END
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/svn/!svn/ver/184/trunk/cms_rails/.gitignore
+/svn/!svn/ver/203/trunk/cms_rails/.gitignore
 END
 Gemfile
 K 25

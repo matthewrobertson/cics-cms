@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svn/!svn/ver/177/trunk/cms_rails/app/views/resources
+/svn/!svn/ver/189/trunk/cms_rails/app/views/resources
 END
 edit.html.erb
 K 25
@@ -21,6 +21,12 @@ svn:wc:ra_dav:version-url
 V 66
 /svn/!svn/ver/114/trunk/cms_rails/app/views/resources/new.html.erb
 END
+show.json.rabl
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/189/trunk/cms_rails/app/views/resources/show.json.rabl
+END
 show.html.erb
 K 25
 svn:wc:ra_dav:version-url
@@ -32,4 +38,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 68
 /svn/!svn/ver/177/trunk/cms_rails/app/views/resources/_form.html.erb
+END
+index.json.rabl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/188/trunk/cms_rails/app/views/resources/index.json.rabl
 END

@@ -15,7 +15,7 @@
             <h4 class="alert-heading">No Projects</h4>
             <p>You can crete your own project here.</p>
             <p>
-              <%= link_to "Create One", new_project_path, :class => "btn" %>
+              <%= link_to "Create One", new_project_path, :class => "btn btn-create" %>
             </p>
           </div>
 
@@ -43,9 +43,10 @@
                 	</table>
 
                 	<%= mp.description %>
-                <ul class="nav nav-pills">
-            		<li class="active"><%= link_to "view", project_path(mp) %></li>
-				</ul>
+                    <p>
+                    <%= link_to "View", project_path(mp), :class => "btn btn-primary" %>
+                    </p>
+
                 </div>
               </div>
             </div>
@@ -53,7 +54,7 @@
 
             <p></p>
             <p>
-              <%= link_to "Create One", new_project_path, :class => "btn" %>
+              <%= link_to "Create One", new_project_path, :class => "btn btn-create" %>
             </p>
 
 <% end %>
@@ -71,7 +72,7 @@
             <h4 class="alert-heading">No Contributions Found</h4>
             <p>Some helpful suggestion message</p>
             <p>
-              <%= link_to "Find One", projects_path, :class => "btn" %>
+              <%= link_to "Find One", projects_path, :class => "btn btn-create" %>
             </p>
           </div>
 
@@ -99,9 +100,9 @@
                 	</table>
 
                 	<%= mp.description %>
-                <ul class="nav nav-pills">
-            		<li class="active"><%= link_to "view", project_path(mp) %></li>
-				</ul>
+                    <p>
+                    <%= link_to "View", project_path(mp), :class => "btn btn-primary" %>
+                    </p>
                 </div>
               </div>
             </div>

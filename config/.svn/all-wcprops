@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/svn/!svn/ver/180/trunk/cms_rails/config
+/svn/!svn/ver/203/trunk/cms_rails/config
 END
 unicorn.rb
 K 25
@@ -43,7 +43,7 @@ nginx.conf
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/!svn/ver/184/trunk/cms_rails/config/nginx.conf
+/svn/!svn/ver/203/trunk/cms_rails/config/nginx.conf
 END
 unicorn_init.sh
 K 25

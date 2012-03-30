@@ -38,6 +38,7 @@ left: 12px;
 margin: 0;
 width: 276px;
 }
+
 .front-signin .signup_txt{
 display: inline;
 margin: 0;
@@ -61,7 +62,6 @@ border: 0;
 -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.35);
 -moz-box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.35);
 box-shadow: 0 1px 0 rgba(0,0,0,.2),0 0 125px rgba(255,255,255,.35);
-
 }
 
 .front-welcome-text {
@@ -76,23 +76,27 @@ line-height: 22px;
 color: #EEE;
 text-align: left;
 text-shadow: black 3px 3px 3px;
-
 }
+
 .front-welcome-text h1 {
 margin-bottom: 3px;
 font-size: 20px;
 font-weight: 700;
 color: white;
 }
+
 h1 {
 font-size: 24px;
 font-weight: bold;
 line-height: 1;
 }
+
 h1, h2, h3, h4, h5, h6 {
 color: #333;
 text-rendering: optimizeLegibility;
 }
+
+
 
 
 .front-signin, .front-signup, .project-listing-header {
@@ -124,6 +128,14 @@ top: 0;
 width: 300px;
 height: 100px;
 }
+
+.front-signup {
+position: relative;
+top: 0;
+width: 450px;
+height: 400px;
+}
+
 
 .front-signin .username {
 position: relative;
@@ -212,6 +224,11 @@ width: auto;
 white-space: nowrap;
 }
 
+
+.primary-btn:hover, .primary-btn:active, .primary-btn.active, .primary-btn.disabled, .primary-btn[disabled] {
+  background-color: #057ED0;
+}
+
 .primary-btn, .following.first-hover .follow-btn:hover, .following .follow-btn, .following .follow-button.cancel-hover-style:hover, .following .follow-button {
 color: white;
 text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
@@ -231,3 +248,19 @@ border-color: #057ED0;
 box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
 }
 
+.btn-create:hover, .btn-create:active, .btn-create.active, .btn-create.disabled, .btn-create[disabled] {
+  background-color: #FD9A0F;
+}
+
+.btn-create{
+background-color: #FD9A0F;
+background-repeat: repeat-x;
+background-image: -moz-linear-gradient(top,#fee94f 0,#fd9a0f 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fee94f),color-stop(100%,#fd9a0f));
+background-image: -webkit-linear-gradient(top,#fee94f 0,#fd9a0f 100%);
+background-image: -ms-linear-gradient(top,#fee94f 0,#fd9a0f 100%);
+background-image: -o-linear-gradient(top,#fee94f 0,#fd9a0f 100%);
+background-image: linear-gradient(top,#fee94f 0,#fd9a0f 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fee94f',endColorstr='#fd9a0f',GradientType=0);
+border-color: #FA2;
+}

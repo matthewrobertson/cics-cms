@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 43
-/svn/!svn/ver/159/trunk/cms_rails/app/admin
+/svn/!svn/ver/199/trunk/cms_rails/app/admin
 END
 announcements.rb
 K 25
@@ -25,11 +25,11 @@ projects.rb
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/!svn/ver/159/trunk/cms_rails/app/admin/projects.rb
+/svn/!svn/ver/199/trunk/cms_rails/app/admin/projects.rb
 END
 resources.rb
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/!svn/ver/129/trunk/cms_rails/app/admin/resources.rb
+/svn/!svn/ver/182/trunk/cms_rails/app/admin/resources.rb
 END

@@ -5,7 +5,7 @@ V 14
 K 25
 svn:wc:ra_dav:version-url
 V 36
-/svn/!svn/ver/174/trunk/cms_rails/db
+/svn/!svn/ver/200/trunk/cms_rails/db
 END
 schema.rb
 K 25
@@ -17,5 +17,5 @@ seeds.rb
 K 25
 svn:wc:ra_dav:version-url
 V 45
-/svn/!svn/ver/169/trunk/cms_rails/db/seeds.rb
+/svn/!svn/ver/200/trunk/cms_rails/db/seeds.rb
 END

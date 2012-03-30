@@ -32,8 +32,8 @@ class User < ActiveRecord::Base
   end
 
   def notifications
-    #return Contribution.where("status > 0").count
-    return 10
+    return Contribution.where("status > 0").count
+    #return 10
   end
 
 end

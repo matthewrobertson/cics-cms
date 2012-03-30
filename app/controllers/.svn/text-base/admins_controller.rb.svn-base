@@ -18,6 +18,8 @@ class AdminsController < ApplicationController
       redirect_to admin_user_path(@user), :alert => "Admin status not set"
     end
   end
+  
+  
 
   def destroy
     @user = User.find(params[:id])

@@ -1,15 +1,15 @@
 10
 
 dir
-180
+203
 https://cics530-430-cms.googlecode.com/svn/trunk/cms_rails/db/migrate
 https://cics530-430-cms.googlecode.com/svn
 
 
 
-2012-03-23T02:27:54.888758Z
-164
-matthewrobertson03@gmail.com
+2012-03-30T01:40:52.003689Z
+196
+charathsandran@gmail.com
 
 
 
@@ -59,6 +59,176 @@ matthewrobertson03@gmail.com
 
 
 253
+
+20120311225614_create_admin_notes.rb
+file
+
+
+
+
+2012-03-12T05:56:14.000000Z
+24052313df263eb7493390b85760d50e
+2012-03-12T06:46:21.067107Z
+122
+matthewrobertson03@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+472
+
+20120215013021_rename_users_projects.rb
+file
+
+
+
+
+2012-02-15T01:31:15.000000Z
+62403ff9b57f5a3d92cc569aa01b9c11
+2012-02-15T01:45:23.546818Z
+48
+matthewrobertson03@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+188
+
+20120215003008_create_resources.rb
+file
+
+
+
+
+2012-02-15T00:34:09.000000Z
+3f13e1a6b468ef33c82f8b91d0794ff7
+2012-02-15T01:45:23.546818Z
+48
+matthewrobertson03@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+312
+
+20120215003832_create_users_projects.rb
+file
+
+
+
+
+2012-02-15T00:41:19.000000Z
+5a88ca9296b0c563cd301eecdba5858b
+2012-02-15T01:45:23.546818Z
+48
+matthewrobertson03@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+188
+
+20120311225615_move_admin_notes_to_comments.rb
+file
+
+
+
+
+2012-03-12T05:56:15.000000Z
+e810a38b13754cffaa77e48588841f29
+2012-03-12T06:46:21.067107Z
+122
+matthewrobertson03@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1290
 
 20120302022048_rename_user_password_column.rb
 file
@@ -128,40 +298,6 @@ matthewrobertson03@gmail.com
 
 237
 
-20120311225614_create_admin_notes.rb
-file
-
-
-
-
-2012-03-12T05:56:14.000000Z
-24052313df263eb7493390b85760d50e
-2012-03-12T06:46:21.067107Z
-122
-matthewrobertson03@gmail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-472
-
 20120316020259_rename_location_to_file.rb
 file
 
@@ -196,6 +332,40 @@ matthewrobertson03@gmail.com
 
 186
 
+20120330011600_add_announcement_column.rb
+file
+
+
+
+
+2012-03-30T02:06:32.000000Z
+bfc2c780480cd7d336ccf37475f4a5eb
+2012-03-30T01:40:52.003689Z
+196
+charathsandran@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+193
+
 20120302035423_rename_type_columns.rb
 file
 
@@ -229,74 +399,6 @@ charathsandran@gmail.com
 
 
 255
-
-20120215003008_create_resources.rb
-file
-
-
-
-
-2012-02-15T00:34:09.000000Z
-3f13e1a6b468ef33c82f8b91d0794ff7
-2012-02-15T01:45:23.546818Z
-48
-matthewrobertson03@gmail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-312
-
-20120215013021_rename_users_projects.rb
-file
-
-
-
-
-2012-02-15T01:31:15.000000Z
-62403ff9b57f5a3d92cc569aa01b9c11
-2012-02-15T01:45:23.546818Z
-48
-matthewrobertson03@gmail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-188
 
 20120215012626_spell_description_correctly.rb
 file
@@ -366,40 +468,6 @@ matthewrobertson03@gmail.com
 
 265
 
-20120215003832_create_users_projects.rb
-file
-
-
-
-
-2012-02-15T00:41:19.000000Z
-5a88ca9296b0c563cd301eecdba5858b
-2012-02-15T01:45:23.546818Z
-48
-matthewrobertson03@gmail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-188
-
 20120323015304_create_contributors.rb
 file
 
@@ -434,17 +502,17 @@ charathsandran@gmail.com
 
 302
 
-20120311225615_move_admin_notes_to_comments.rb
+20120330010433_add_user_columns.rb
 file
 
 
 
 
-2012-03-12T05:56:15.000000Z
-e810a38b13754cffaa77e48588841f29
-2012-03-12T06:46:21.067107Z
-122
-matthewrobertson03@gmail.com
+2012-03-30T02:06:32.000000Z
+e94d1dca2c19151f6fca2e65ea09c1b0
+2012-03-30T01:39:53.175951Z
+195
+charathsandran@gmail.com
 
 
 
@@ -466,5 +534,5 @@ matthewrobertson03@gmail.com
 
 
 
-1290
+296
 

@@ -25,11 +25,19 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(params[:project])
     @project.owner = current_user
+ 
     if @project.save
-      redirect_to @project, :notice => "Successfully created project."
+     respond_to do |format|
+       format.html { redirect_to @project, :notice => "Successfully created project." }
+       format.json { render :json => project.to_json }
+     end
     else
+     respond_to do |format|
       render :action => 'new'
+      format.json { render :json => {error: "unprocessable entity"}.to_json }
+     end
     end
+
   end
 
   def edit
