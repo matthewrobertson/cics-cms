@@ -1,4 +1,5 @@
-<h1>My Associates</h1>
+<div class="project-view-title">
+<h1>My Network</h1>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -23,5 +24,6 @@
     <% end %>
   </tbody>
 </table>
+    </div>
 
 

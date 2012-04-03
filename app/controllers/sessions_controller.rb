@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
 
   def new
     if current_user
-      redirect_to user_path(current_user), :alert => "You are already logged in"
+      redirect_to home_path, :alert => "You are already logged in"
     else
       render
     end
@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       respond_to do |format|
-        format.html { redirect_to user_path(current_user), :notice => "Logged in!" }
+        format.html { redirect_to home_path, :notice => "Logged in!" }
         format.json { render :json => user.to_json }
       end
     else

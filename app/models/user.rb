@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   validates_presence_of :password, :on => :create
   #Authentication Code End
   
-	validates_presence_of :email, :full_name, :pref_name, :password_confirmation
+	validates_presence_of :email, :full_name, :pref_name
   #validates_inclusion_of :admin, :in => [0, 1]
 
   validates_uniqueness_of :email, :case_sensitive => false

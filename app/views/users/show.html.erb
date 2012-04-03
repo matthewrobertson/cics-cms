@@ -1,14 +1,25 @@
-<div class="accordion" id="accordion1">
+
+<div class="accordion project-dash-header">
+
+
+<h2>Welcome back, <%= current_user.name %> </h2>
+
+
 <div class="alert alert-block alert-error fade in">
             <a class="close" data-dismiss="alert" href="#">×</a>
             <h4 class="alert-heading">Administrator Announcement:</h4>
             <p>A scheduled server maintenance shutdown will commence at 10:00am - 11:00am, Friday Feb, 17th
               2012.Please be advised there will be no access to ProjectBox resource management services at this time. Thanks! </p>
-          </div>
+</div>
 
-      <h2>Welcome back, <%= current_user.name %> </h2>
 
+  </div>
+
+
+
+<div class="accordion project-dash-header" id="accordion1">
 <h3> Managed Projects </h3>
+
 <% if @managed_projects.empty? %>
 
 	<div class="alert alert-block fade in">
@@ -23,13 +34,13 @@
 
 
 <% @managed_projects.each do |mp| %>
-<div class="accordion-group">
+<div class="accordion-group ">
               <div class="accordion-heading project-listing-header">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#managedCollapse<%= mp.id %>">
                  <%= mp.name %>
                 </a>
               </div>
-              <div id="managedCollapse<%= mp.id %>" class="accordion-body collapse" style="height: 0px; ">
+              <div id="managedCollapse<%= mp.id %>" class="accordion-body collapse dash-bg" style="height: 0px; ">
                 <div class="accordion-inner">
                 	<table>
                 		<tr>
@@ -62,7 +73,7 @@
 
 
 
-<div class="accordion" id="accordion2">
+<div class="accordion project-dash-header" id="accordion2">
 <h3> Contributing Projects </h3>
 
 <% if @contrib_projects.empty? %>
@@ -86,7 +97,7 @@
                  <%= mp.name %>
                 </a>
               </div>
-              <div id="managedCollapse<%= mp.id %>" class="accordion-body collapse" style="height: 0px; ">
+              <div id="managedCollapse<%= mp.id %>" class="accordion-body collapse dash-bg" style="height: 0px; ">
                 <div class="accordion-inner">
                 	<table>
                 		<tr>
@@ -110,5 +121,7 @@
 
 <% end %>
 </div>
-            
+
+
+
 

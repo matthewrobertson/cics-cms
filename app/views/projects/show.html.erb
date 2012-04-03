@@ -1,8 +1,10 @@
-<h1><%= @project.name %></h1>
+<div class="accordion project-view-title" id="accordion1">
 
-<h3>Owner: <%=current_user.name  %></h3><br>
+<h1>Project <%= @project.name %></h1>
+<h3>Managed by: <%=current_user.name  %></h3>
 
-<div class="accordion" id="accordion1">
+
+
 <div class="alert alert-block alert-error fade in">
             <a class="close" data-dismiss="alert" href="#">×</a>
             <h4 class="alert-heading">Project Announcement:</h4>
@@ -14,11 +16,18 @@
 	</tr>
 	</table>
    </div>
-	    <p>
-              <%= link_to "Create One", new_announcement_path, :class => "btn" %>
+</div>
+  	    <p>
+              <%= link_to "Create Announcement", new_announcement_path, :class => "btn btn-create" %>
             </p>
-</div>
-</div>
+
+
+
+ </div>
+
+
+
+<div class="project-dash-header">
 
 <p>
   <b>Description</b><br>
@@ -31,16 +40,16 @@
   <%= @project.ending_at.strftime("%m/%d/%Y") %>
 </p>
 
-<b> Project Contributors: </b>
+<b> Contributing Members: </b>
 
 <% if @managed_users.empty? %>
 
 	<div class="alert alert-block fade in">
             
-            <h4 class="alert-heading">No Contributions Found</h4>
-            <p>Some helpful suggestion message</p>
+            <h4 class="alert-heading">No contributors found!</h4>
+            <p>Why not invite some members from your online social network?</p>
             <p>
-              <%= link_to "Find One", users_path, :class => "btn" %>
+              <%= link_to "Find One", users_path, :class => "btn btn-primary" %>
             </p>
           </div>
 
@@ -62,7 +71,7 @@
               </div>
             </div>
 <% end %>
-<%= link_to "Add contributors", users_path, :class => "btn" %>
+<%= link_to "Add contributors", users_path, :class => "btn btn-create" %>
 <% end %>
 
 
@@ -77,7 +86,7 @@
             <h4 class="alert-heading">No Resource Found</h4>
             <p>Add a resource</p>
             <p>
-              <%= link_to "Create One", new_project_resource_path(@project), :class => "btn" %>
+              <%= link_to "Create One", new_project_resource_path(@project), :class => "btn btn-create" %>
             </p>
           </div>
 
@@ -114,14 +123,17 @@
   <% end %>
   </tbody>
     </table>
-  <%= link_to "Add Resources", new_project_resource_path(@project), :class => "btn" %>
+  <%= link_to "Add Resources", new_project_resource_path(@project), :class => "btn btn-create" %>
 <% end %>
 
 
 
 
 <div class="form-actions">
-  <%= link_to 'Back', user_path(@project.owner_id), :class => 'btn'  %>
-  <%= link_to 'Edit', edit_project_path(@project), :class => 'btn' %>
+  <%= link_to 'Back', user_path(@project.owner_id), :class => 'btn btn-primary'  %>
+  <%= link_to 'Edit', edit_project_path(@project), :class => 'btn btn-primary' %>
   <%= link_to 'Delete', project_path(@project), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
 </div>
+
+
+    </div>

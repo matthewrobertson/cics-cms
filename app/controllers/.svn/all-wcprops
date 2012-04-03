@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 49
-/svn/!svn/ver/193/trunk/cms_rails/app/controllers
+/svn/!svn/ver/207/trunk/cms_rails/app/controllers
 END
 resources_controller.rb
 K 25
@@ -37,13 +37,13 @@ application_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svn/!svn/ver/162/trunk/cms_rails/app/controllers/application_controller.rb
+/svn/!svn/ver/207/trunk/cms_rails/app/controllers/application_controller.rb
 END
 sessions_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/!svn/ver/180/trunk/cms_rails/app/controllers/sessions_controller.rb
+/svn/!svn/ver/207/trunk/cms_rails/app/controllers/sessions_controller.rb
 END
 mobile_controller.rb
 K 25

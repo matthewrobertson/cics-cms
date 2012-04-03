@@ -1,18 +1,14 @@
 
-<%= simple_form_for(@user, :html => { :class => 'form-horizontal project-listing-header' } ) do |f| %>
+<%= simple_form_for(@user, :html => { :class => 'form-horizontal project-listing-header front-signup signup'} ) do |f| %>
   <fieldset>
-    <legend><%= controller.action_name.capitalize %> Account Sign-up</legend>
+    <legend> <h2><strong>New to ProjectBox?</strong> Sign up</h2></legend>
     <%= f.input :full_name, :placeholder => "Full Name" %>
     <%= f.input :pref_name, :placeholder => "Preferred Name" %>
     <%= f.input :email, :placeholder => "Email" %>
     <%= f.input :password, :placeholder => "Password"%>
     <%= f.input :password_confirmation, :placeholder => "Password Confirmation"%>
-
-    <div class="form-actions">
-      <%= f.submit nil, :class => 'btn btn-create' %>
-      <%= link_to 'Cancel', users_path, :class => 'btn btn-primary' %>
+    <div class="sign-up-actions">
+      <%= f.submit nil, :class => 'btn btn-create signup-btn' %>
     </div>
   </fieldset>
 <% end %>
-
-

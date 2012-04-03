@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts
+/svn/!svn/ver/209/trunk/cms_rails/app/assets/javascripts
 END
 mobile_app.js
 K 25
@@ -13,7 +13,7 @@ cms_rails.js
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts/cms_rails.js
+/svn/!svn/ver/209/trunk/cms_rails/app/assets/javascripts/cms_rails.js
 END
 application.js
 K 25

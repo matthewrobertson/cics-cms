@@ -7,6 +7,17 @@
     <%= javascript_include_tag "mobile_app" %>
   </head>
   <body>
-
+	
+	<div id="loginDiv">
+	<form id="login-form">
+	  Username: <input type="text" id="email"><br>
+	  Password: <input type="password" id="password"><br>
+	  <button id="login">Login</button>
+	</form>
+	</div>	
+	
+	<div id="projectsDiv">
+	</div>
+  
   </body>
 </html>

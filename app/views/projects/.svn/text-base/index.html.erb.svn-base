@@ -1,8 +1,9 @@
-<h1>My Projects</h1>
+<div class="project-view-title">
+<h1>Project Database</h1>
 <div>
 	<form method="get" action="">
 		<input type="text" name="search">
-		<input type="submit" value="Find">
+		<input class="btn btn-primary" type="submit" value="Search">
 	</form>
 </div>
 <% if @projects %>
@@ -49,6 +50,7 @@
 </table>
 <%end%>
 <% end %>
+   </div>
 
 
 

@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+
+  helper_method :current_user
+  helper_method :home_path
   
   def current_user
   	if @current_user.nil? && session[:user_id]
@@ -7,8 +10,6 @@ class ApplicationController < ActionController::Base
   	end
     @current_user
   end
-
-  helper_method :current_user
   
   def is_logged_in
     if current_user.nil? 
@@ -16,9 +17,17 @@ class ApplicationController < ActionController::Base
       return false
     end
   end
-  #Authentication Code End
+
+  def home_path
+    if current_user.try :admin?
+      return admin_dashboard_path
+    elsif current_user
+      return user_path(current_user)
+    else
+      return login_path
+    end
+  end
   
-  #Exception Code Begin
   rescue_from CanCan::AccessDenied do |exception|
     if current_user.nil? 
       redirect_to login_url, :alert => "You are not authorized! Please login as appropriate user" 
@@ -26,5 +35,5 @@ class ApplicationController < ActionController::Base
       redirect_to user_path(current_user), :alert => "You are not authorized!"
     end
   end
-  #Exception Code End
+  
 end

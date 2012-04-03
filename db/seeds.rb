@@ -10,6 +10,7 @@ Project.delete_all
 Announcement.delete_all
 Resource.delete_all
 
+
 100.times do
 	u  = User.create(	
 			:full_name 	=> Faker::Name.name,
@@ -39,15 +40,17 @@ Resource.delete_all
 		c.project=p
 		c.save
 			
-	
-		a = Announcement.new
-		a.topic = Faker::Company.name
-		a.content = Faker::Company.bs
-		a.kind = "project announcement"
-		a.user = u
-		a.project = p
-		a.save
-		
+		3.times do
+		  a = Announcement.new(
+			:topic => Faker::Company.name,
+			:content => Faker::Company.bs,
+			:kind => "project announcement"
+		  )
+		  a.user = u
+		  a.project = p
+		  a.save
+		end
+				
 		if p		
 			5.times do			
 			r= Resource.new(
@@ -77,5 +80,16 @@ admin = User.new(
 admin.admin = true
 admin.save
 
+
+10.times do
+	  admin_a = Announcement.new(
+		:topic => Faker::Company.name,
+		:content => Faker::Company.bs,
+		:kind => "admin announcement",
+		:project_id => 0
+	  )
+	  admin_a.user = admin	  
+	  admin_a.save
+end
 
 	
