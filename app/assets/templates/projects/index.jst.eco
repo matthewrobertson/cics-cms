@@ -1,0 +1,10 @@
+<div data-role="header">
+	<h1>My Projects</h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+
+	<ul data-role="listview" data-inset="true" id='projs-listview'>
+		
+	</ul>
+</div>

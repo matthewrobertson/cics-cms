@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/svn/!svn/ver/207/trunk/cms_rails/app/models
+/svn/!svn/ver/221/trunk/cms_rails/app/models
 END
 ability.rb
 K 25
@@ -13,7 +13,7 @@ user.rb
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/!svn/ver/207/trunk/cms_rails/app/models/user.rb
+/svn/!svn/ver/221/trunk/cms_rails/app/models/user.rb
 END
 contribution.rb
 K 25
@@ -43,11 +43,11 @@ resource.rb
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/!svn/ver/150/trunk/cms_rails/app/models/resource.rb
+/svn/!svn/ver/221/trunk/cms_rails/app/models/resource.rb
 END
 announcement.rb
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/!svn/ver/202/trunk/cms_rails/app/models/announcement.rb
+/svn/!svn/ver/217/trunk/cms_rails/app/models/announcement.rb
 END

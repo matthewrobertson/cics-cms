@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/svn/!svn/ver/207/trunk/cms_rails/config
+/svn/!svn/ver/221/trunk/cms_rails/config
 END
 unicorn.rb
 K 25
@@ -13,7 +13,7 @@ routes.rb
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/!svn/ver/180/trunk/cms_rails/config/routes.rb
+/svn/!svn/ver/218/trunk/cms_rails/config/routes.rb
 END
 database.yml
 K 25

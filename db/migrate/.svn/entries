@@ -1,7 +1,7 @@
 10
 
 dir
-212
+228
 https://cics530-430-cms.googlecode.com/svn/trunk/cms_rails/db/migrate
 https://cics530-430-cms.googlecode.com/svn
 
@@ -94,40 +94,6 @@ matthewrobertson03@gmail.com
 
 472
 
-20120215013021_rename_users_projects.rb
-file
-
-
-
-
-2012-02-15T01:31:15.000000Z
-62403ff9b57f5a3d92cc569aa01b9c11
-2012-02-15T01:45:23.546818Z
-48
-matthewrobertson03@gmail.com
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-188
-
 20120215003008_create_resources.rb
 file
 
@@ -161,6 +127,40 @@ matthewrobertson03@gmail.com
 
 
 312
+
+20120215013021_rename_users_projects.rb
+file
+
+
+
+
+2012-02-15T01:31:15.000000Z
+62403ff9b57f5a3d92cc569aa01b9c11
+2012-02-15T01:45:23.546818Z
+48
+matthewrobertson03@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+188
 
 20120215003832_create_users_projects.rb
 file

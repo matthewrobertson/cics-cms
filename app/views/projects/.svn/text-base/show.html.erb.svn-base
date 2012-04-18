@@ -1,51 +1,71 @@
+
+<div id="projects" data-projects="<%= render(template: "projects/index.json.rabl") %>" >
+
+
 <div class="accordion project-view-title" id="accordion1">
 
-<h1>Project <%= @project.name %></h1>
-<h3>Managed by: <%=current_user.name  %></h3>
+<h1><%= @project.name %></h1>
+<p><h4>"<%=@project.description%>"</h4>  </p>
+
+  </div>
 
 
+<div class="accordion project-view-title" id="accordion2">
 
+
+<% if @project_announcements.empty? %>
+         <p>You currently have no announcements.</p>
+
+<%else%>
+      <h3>Announcements</h3>
+
+<div class="accordion-group ">
+
+  <div class="accordion-heading project-listing-header">
+    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#managedCollapse0">
+     Show/Hide <%= @project_announcements.count %>  Announcements
+    </a>
+  </div>
+
+  <div id="managedCollapse0" class="accordion-body collapse dash-bg" style="height: 0px; ">
+
+<% @project_announcements.each do |pa| %>
 <div class="alert alert-block alert-error fade in">
             <a class="close" data-dismiss="alert" href="#">×</a>
-            <h4 class="alert-heading">Project Announcement:</h4>
-   <div class="alert alert-block fade in">
-	<table>
-	<tr>
-	<td>Project meeting scheduled on 03/27/12 at 3.30pm in ICICS Room 208. Rememeber to bring your deliverables. Meet you on 	Tuesday!</br>
-	<b>Posted on:</b>03/23/2012</td>
-	</tr>
-	</table>
-   </div>
+        <h4 class="alert-heading">Topic: <%= pa.topic%></h4>
+      <div class="alert alert-block fade in announcement_border">
+        <p><%= pa.content %></p>
+      </div>
+      <h7>Created: <%= pa.created_at%></h7>
 </div>
-  	    <p>
-              <%= link_to "Create Announcement", new_announcement_path, :class => "btn btn-create" %>
-            </p>
+<%end%>
 
-
-
- </div>
-
-
-
-<div class="project-dash-header">
-
+  </div>
+</div>
+<%end%>
 <p>
-  <b>Description</b><br>
-  <%= @project.description %>
+   <%= link_to "Create Announcement", new_project_announcement_path(@project), :class => "btn btn-create" %>
 </p>
+</div>
+
+
+<div class="accordion project-view-title" id="accordion3" >
+  <h3>Details</h3>
 
 <p>
-  <b>Project Period: </b>
+  <b>Period: </b>
  <%= @project.started_at.strftime("%m/%d/%Y") %> -
   <%= @project.ending_at.strftime("%m/%d/%Y") %>
 </p>
+<p>
+  <h4>Manager:  <%=@project.owner.name  %>     </h4>
 
-<b> Contributing Members: </b>
+</p>
 
 <% if @managed_users.empty? %>
-
+       <b> Contributors</b>
 	<div class="alert alert-block fade in">
-            
+
             <h4 class="alert-heading">No contributors found!</h4>
             <p>Why not invite some members from your online social network?</p>
             <p>
@@ -56,28 +76,70 @@
 
 <% else %>
 
-<% @managed_users.each do |pc| %>
 <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#managedCollapse<%= pc.id %>">
-                 <%= pc.name %>
+
+
+              <div class="accordion-heading project-listing-header">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#managedCollapse1">
+                         Show/Hide <%= @managed_users.count - 1 %> Contributors
                 </a>
               </div>
-              <div id="managedCollapse<%= pc.id %>" class="accordion-body collapse" style="height: 0px; ">
+              <div id="managedCollapse1" class="accordion-body collapse" style="height: 0px; ">
                 <div class="accordion-inner">
-                      	<%= pc.email %>
-                
-                </div>
-              </div>
-            </div>
-<% end %>
-<%= link_to "Add contributors", users_path, :class => "btn btn-create" %>
-<% end %>
+                        <table class='table table-striped table-bordered'>
+      <thead>
+        <tr>
+        <th>Name</th>
+        <th>Email</th>
+          <%if current_user == @project.owner %>
 
+        <th>Action</th>
+              <%end%>
+        </tr>
+      </thead>
+    <tbody>
+    <tr>
+        <% @managed_users.each do |pc| %>
+            <% if pc != @project.owner %>
+              <td><%= pc.name %></td>
+              <td><%= pc.email %></td>
+
+            <%if current_user == @project.owner %>
+                  <td><%= link_to "Remove", "#", :class => "btn btn-mini btn-danger" %></td>
+            <%end%>
+
+
+            <%end%>
+        <% end %>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+              </div>
+
+
+            </div>
+       <p>
+         <%if current_user == @project.owner %>
+
+<%= link_to "Add contributors", users_path, :class => "btn btn-create" %>
+
+
+          <%end%>
+        </p>
+  <% end %>
+
+
+
+
+</div>
+
+
+<div class="accordion project-view-title" id="accordion4">
 
 
 <p></p>
-<b> Project Resources: </b>
+<h3>Resources</h3>
 
 <% if @managed_resources.empty? %>
 
@@ -92,7 +154,19 @@
 
 
 <% else %>
-<table class='table table-striped table-bordered'>
+
+<div class="accordion-group">
+
+
+              <div class="accordion-heading project-listing-header">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#managedCollapse3">
+                         Show/Hide <%= @managed_resources.count%> Resources
+                </a>
+              </div>
+              <div id="managedCollapse3" class="accordion-body collapse" style="height: 0px; ">
+                <div class="accordion-inner">
+                        <table class='table table-striped table-bordered'>
+
       <thead>
         <tr>
         <th>Name</th>
@@ -100,7 +174,7 @@
         <th>Description</th>
         <th>Created</th>
         <th>Version</th>
-        <th></th>
+        <th>Actions</th>
         </tr>
       </thead>
     <tbody>
@@ -114,26 +188,38 @@
         <td><%= pr.version %></td>
         <td>
           <% if pr.file.url %>
-          <%= link_to "Download", pr.file.url, :class => "btn btn-mini" %>
+          <%= link_to "Download", pr.file.url, :class => "btn btn-mini btn-success" %>
           <% end %>
-          <%= link_to "Replace", edit_resource_path(pr), :class => "btn btn-mini btn-danger" %>
+
+          <%if pr.user_id == current_user.id%>
+          <%= link_to "Replace", edit_resource_path(pr), :class => "btn btn-mini btn-create" %>
+          <%= link_to "Delete", edit_resource_path(pr), :class => "btn btn-mini btn-danger" %>
+
+          <%end%>
         </td>
     </tr>
     
   <% end %>
   </tbody>
     </table>
-  <%= link_to "Add Resources", new_project_resource_path(@project), :class => "btn btn-create" %>
+                  </div>
+                </div>
+  </div>
+
+
+
+  <p><%= link_to "Add Resources", new_project_resource_path(@project), :class => "btn btn-create" %></p>
 <% end %>
 
+    </div>
 
 
-
-<div class="form-actions">
+<div class="form-actions project-view-title">
   <%= link_to 'Back', user_path(@project.owner_id), :class => 'btn btn-primary'  %>
-  <%= link_to 'Edit', edit_project_path(@project), :class => 'btn btn-primary' %>
+  <%if current_user == @project.owner %>
+  <%= link_to 'Edit', edit_project_path(@project), :class => 'btn btn-create' %>
   <%= link_to 'Delete', project_path(@project), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+      <% end %>
+</div>
 </div>
 
-
-    </div>

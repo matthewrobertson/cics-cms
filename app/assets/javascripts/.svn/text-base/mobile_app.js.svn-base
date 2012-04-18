@@ -7,6 +7,8 @@
 //= require jquery
 //= require underscore
 //= require backbone
+//= require jquery_mobile_configs
+//= require jquery_mobile
 //= require .//cms_rails
 //= require_tree ../templates/
 //= require_tree .//models

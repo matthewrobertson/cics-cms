@@ -1,31 +1,37 @@
 K 25
 svn:wc:ra_dav:version-url
 V 49
-/svn/!svn/ver/207/trunk/cms_rails/app/controllers
+/svn/!svn/ver/223/trunk/cms_rails/app/controllers
 END
 resources_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svn/!svn/ver/180/trunk/cms_rails/app/controllers/resources_controller.rb
+/svn/!svn/ver/217/trunk/cms_rails/app/controllers/resources_controller.rb
 END
 admins_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svn/!svn/ver/182/trunk/cms_rails/app/controllers/admins_controller.rb
+/svn/!svn/ver/221/trunk/cms_rails/app/controllers/admins_controller.rb
 END
 announcements_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 77
-/svn/!svn/ver/155/trunk/cms_rails/app/controllers/announcements_controller.rb
+/svn/!svn/ver/217/trunk/cms_rails/app/controllers/announcements_controller.rb
+END
+my_resources_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/218/trunk/cms_rails/app/controllers/my_resources_controller.rb
 END
 users_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/!svn/ver/156/trunk/cms_rails/app/controllers/users_controller.rb
+/svn/!svn/ver/217/trunk/cms_rails/app/controllers/users_controller.rb
 END
 contributions_controller.rb
 K 25
@@ -37,7 +43,7 @@ application_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 75
-/svn/!svn/ver/207/trunk/cms_rails/app/controllers/application_controller.rb
+/svn/!svn/ver/223/trunk/cms_rails/app/controllers/application_controller.rb
 END
 sessions_controller.rb
 K 25
@@ -49,11 +55,17 @@ mobile_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svn/!svn/ver/180/trunk/cms_rails/app/controllers/mobile_controller.rb
+/svn/!svn/ver/223/trunk/cms_rails/app/controllers/mobile_controller.rb
+END
+password_resets_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/218/trunk/cms_rails/app/controllers/password_resets_controller.rb
 END
 projects_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/!svn/ver/193/trunk/cms_rails/app/controllers/projects_controller.rb
+/svn/!svn/ver/217/trunk/cms_rails/app/controllers/projects_controller.rb
 END

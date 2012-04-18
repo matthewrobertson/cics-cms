@@ -1,19 +1,37 @@
-
-<div class="accordion project-dash-header">
-
-
-<h2>Welcome back, <%= current_user.name %> </h2>
+<div class="accordion project-dash-header" id="accordian0">
+  <h2>Welcome back, <%= current_user.name %> </h2>
 
 
-<div class="alert alert-block alert-error fade in">
-            <a class="close" data-dismiss="alert" href="#">×</a>
-            <h4 class="alert-heading">Administrator Announcement:</h4>
-            <p>A scheduled server maintenance shutdown will commence at 10:00am - 11:00am, Friday Feb, 17th
-              2012.Please be advised there will be no access to ProjectBox resource management services at this time. Thanks! </p>
+
+
+  <%if @admin_latest != nil %>
+
+<div class="accordion-group ">
+  <div class="accordion-heading project-listing-header">
+    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion0" href="#managedCollapse0">
+      New Announcements!
+    </a>
+  </div>
+
+  <div id="managedCollapse0" class="accordion-body collapse dash-bg" style="height: 0px; ">
+    <div class="alert alert-block alert-error fade in">
+      <a class="close" data-dismiss="alert" href="#">×</a>
+      <h4 class="alert-heading">Topic: <%= @admin_latest.topic%></h4>
+      <div class="alert alert-block fade in announcement_border">
+        <p><%= @admin_latest.content %></p>
+      </div>
+      <h7>Created: <%= @admin_latest.created_at%></h7>
+    </div>
+  </div>
+
 </div>
 
+<%end%>
 
-  </div>
+
+
+
+</div>
 
 
 
@@ -118,7 +136,9 @@
               </div>
             </div>
 <% end %>
-
+            <p>
+              <%= link_to "Join One", projects_path, :class => "btn btn-create" %>
+            </p>
 <% end %>
 </div>
 

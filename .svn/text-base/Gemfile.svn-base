@@ -27,16 +27,17 @@ end
 
 gem 'jquery-rails'
 gem 'carrierwave'
+#gem "rmagick"
 gem 'backbone-on-rails'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+#gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem 'rails-dev-tweaks', '~> 0.5.1'
 gem 'letter_opener', :group => :development

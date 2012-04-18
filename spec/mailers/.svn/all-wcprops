@@ -1,5 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
-V 45
-/svn/!svn/ver/20/trunk/cms_rails/spec/mailers
+V 46
+/svn/!svn/ver/218/trunk/cms_rails/spec/mailers
+END
+user_mailer_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/218/trunk/cms_rails/spec/mailers/user_mailer_spec.rb
 END

@@ -1,0 +1,13 @@
+<div data-role="header">
+	<h1>Login To ProjectBox</h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+	<div id="loginDiv">
+		<form id="login-form">
+		  Username: <input type="text" id="email"><br>
+		  Password: <input type="password" id="password"><br>
+		  <button id="login">Login</button>
+		</form>
+	</div>		
+</div>

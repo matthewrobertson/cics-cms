@@ -1,4 +1,4 @@
-class User < ActiveRecord::Base
+  class User < ActiveRecord::Base
 	has_many :owned_resources, :foreign_key => :user_id, :class_name => "Resource"
 	has_many :announcements
 	has_many :owned_projects, :foreign_key => :owner_id, :class_name => "Project"
@@ -34,6 +34,29 @@ class User < ActiveRecord::Base
   def notifications
     return Contribution.where("status > 0").count
     #return 10
+  end
+  
+  def adminuser
+    return user.where(:admin => true)
+    #return 10
+  end
+
+  def send_password_reset
+    generate_token(:password_reset_token)
+    # set it to expire in three hours
+    self.password_reset_expired_at = 3.hours.from_now
+    save!
+    UserMailer.password_reset(self).deliver
+  end
+
+  def password_reset_expired?
+    self.password_reset_expired_at && self.password_reset_expired_at < Time.now
+  end
+
+  def generate_token(column)
+    begin
+      self[column] = SecureRandom.urlsafe_base64
+    end while User.exists?(column => self[column])
   end
 
 end

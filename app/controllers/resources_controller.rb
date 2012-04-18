@@ -46,7 +46,7 @@ class ResourcesController < ApplicationController
   def destroy
     @resource = Resource.find(params[:id])
     @resource.destroy
-    redirect_to resources_url, :notice => "Successfully destroyed resource."
+    redirect_to @project, :notice => "Successfully destroyed resource."
   end
 
   private

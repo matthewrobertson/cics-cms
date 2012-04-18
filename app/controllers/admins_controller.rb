@@ -30,5 +30,8 @@ class AdminsController < ApplicationController
       redirect_to admin_user_path(@user), :alert => "Admin status not changed"
     end
   end
+  
+  
+  
 
 end

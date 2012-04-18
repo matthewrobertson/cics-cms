@@ -16,6 +16,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
     @managed_users = @project.users.all
     @managed_resources = @project.resources.all
+    @project_announcements = @project.announcements.all
   end
 
   def new
@@ -33,7 +34,7 @@ class ProjectsController < ApplicationController
      end
     else
      respond_to do |format|
-      render :action => 'new'
+      format.html { render "new" }
       format.json { render :json => {error: "unprocessable entity"}.to_json }
      end
     end
@@ -47,15 +48,25 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     if @project.update_attributes(params[:project])
-      redirect_to @project, :notice  => "Successfully updated project."
+     respond_to do |format|
+      format.html{ redirect_to @project, :notice  => "Successfully updated project."}
+      format.json {render :json => project.to_json}
+     end
     else
-      render :action => 'edit'
+     respond_to do |format|
+      format.html { render "edit" }
+      format.json { render :json => {error: "unprocessable entity"}.to_json }
+     end
     end
   end
 
   def destroy
     @project = Project.find(params[:id])
     @project.destroy
-    redirect_to projects_url, :notice => "Successfully destroyed project."
+     respond_to do |format|
+      format.html{ redirect_to projects_url, :notice  => "Successfully destroyed project."}
+      format.json {render :json => project.to_json}
+     end
+   
   end
 end

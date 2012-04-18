@@ -1,7 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
-V 44
-/svn/!svn/ver/96/trunk/cms_rails/app/helpers
+V 45
+/svn/!svn/ver/218/trunk/cms_rails/app/helpers
+END
+my_resources_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/218/trunk/cms_rails/app/helpers/my_resources_helper.rb
 END
 users_helper.rb
 K 25
@@ -20,6 +26,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 61
 /svn/!svn/ver/79/trunk/cms_rails/app/helpers/staffs_helper.rb
+END
+password_resets_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/218/trunk/cms_rails/app/helpers/password_resets_helper.rb
 END
 projects_helper.rb
 K 25

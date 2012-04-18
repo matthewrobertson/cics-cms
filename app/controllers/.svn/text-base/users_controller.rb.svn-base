@@ -4,15 +4,25 @@ class UsersController < ApplicationController
 
   respond_to :html, :xml, :json
 
+
+
   def index
-    @users = User.all
-    respond_with @users
+
+    if(params[:search])
+      @users = User.find(:all, :conditions => ['full_name LIKE ?', "%#{params[:search]}%"])
+    else
+      @users = nil
+    end
+
+    #@users = User.all
+    #respond_with @users
   end
 
   def show
     @user = User.find(params[:id])
     @managed_projects = @user.owned_projects.all
     @contrib_projects = @user.projects.all
+    @admin_latest = Announcement.find_last_by_project_id(params[:id => 0])
     
   end
 

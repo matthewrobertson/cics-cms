@@ -1,6 +1,7 @@
 class Announcement < ActiveRecord::Base
-	belongs_to :user
-	belongs_to :project
+	belongs_to :project, :foreign_key => :project_id, :class_name => "Project"
+	belongs_to :user, :foreign_key => :user_id, :class_name => "User"
+
 
   validates_presence_of :topic, :content, :kind
   

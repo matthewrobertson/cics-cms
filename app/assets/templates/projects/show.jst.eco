@@ -1,0 +1,11 @@
+<div data-role="header">
+	<a href="#projects" data-icon="back" id="back_btn">Back</a>
+	<h1><%= @name %></h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+	<div id="photo-div">
+		<button id='capturePhoto'>Capture Photo</button> <br>
+		<button id='uploadPhoto'>Upload Photo</button> <br>
+	</div>	
+</div>

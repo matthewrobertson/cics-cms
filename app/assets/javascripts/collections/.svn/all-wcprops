@@ -1,5 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts/collections
+/svn/!svn/ver/225/trunk/cms_rails/app/assets/javascripts/collections
+END
+projects.js
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/225/trunk/cms_rails/app/assets/javascripts/collections/projects.js
 END

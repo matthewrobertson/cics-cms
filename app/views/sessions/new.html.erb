@@ -3,7 +3,7 @@
 
  <div class="front-welcome"></div>
 
-<div class="front-signin" >
+<div class="front-signin default-div" >
 <%= form_tag sessions_path, :class =>"signin" do %>
 
       <div class="username">
@@ -26,7 +26,8 @@
           </tbody>
         </table>
             <div class="sign-up signup_txt">
-          Don't have an account? <%= link_to "sign up", new_user_path %>
+          No account? <%= link_to "sign up", new_user_path %> 
+          Forgot password? <%= link_to "click here", new_password_reset_path %>
         </div>
 <% end %>
 </div>

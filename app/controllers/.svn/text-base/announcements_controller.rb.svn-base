@@ -1,29 +1,32 @@
 class AnnouncementsController < ApplicationController
   before_filter :is_logged_in
-
   respond_to :html, :xml, :json
+  before_filter :find_project, :only => [:index, :new, :create]
   
   def index
-    @announcements = Announcement.all
-    respond_with @announcements
+    @announcements = @project.announcements.all
   end
 
   def show
-    @announcement = Announcement.find(params[:id])
-    respond_with @announcement
+    @announcement = Announcement.find(params[:id])   
   end
 
   def new
-    @announcement = Announcement.new
-    respond_with @announcement
+    @announcement = @project.announcements.build
   end
 
+
   def create
-    @announcement = Announcement.new(params[:announcement])
-    @announcement.save
-    flash[:notice] = "Successfully created announcement." if @announcement.valid?
-    respond_with @announcement
+    @announcement = @project.announcements.build(params[:announcement])
+    @announcement.user = current_user
+    if @announcement.save
+      redirect_to @project, :notice => "Successfully created announcement."
+    else
+      render :action => 'new'
+    end
   end
+
+
 
   def edit
     @announcement = Announcement.find(params[:id])
@@ -42,4 +45,10 @@ class AnnouncementsController < ApplicationController
     @announcement.destroy
     respond_with @announcement
   end
+
+  def find_project
+    @project = Project.find(params[:project_id])
+  end
+
+
 end

@@ -6,7 +6,7 @@ ActiveAdmin.register Project do
 	end
 	
 	sidebar "Contributors for current project", :only =>:show do
-		table_for self.project.users do |t|
+		table_for self.project.users.each do |t|
 			t.column("Contributors") { |user| link_to user.full_name, admin_user_path(user) }
 		end	
 	end

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/!svn/ver/153/trunk/cms_rails/spec/controllers
+/svn/!svn/ver/218/trunk/cms_rails/spec/controllers
 END
 users_controller_spec.rb
 K 25
@@ -14,6 +14,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 78
 /svn/!svn/ver/127/trunk/cms_rails/spec/controllers/sessions_controller_spec.rb
+END
+password_resets_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/218/trunk/cms_rails/spec/controllers/password_resets_controller_spec.rb
 END
 projects_controller_spec.rb
 K 25
@@ -32,4 +38,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 83
 /svn/!svn/ver/153/trunk/cms_rails/spec/controllers/announcements_controller_spec.rb
+END
+my_resources_controller_spec.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/218/trunk/cms_rails/spec/controllers/my_resources_controller_spec.rb
 END

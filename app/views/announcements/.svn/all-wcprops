@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 57
-/svn/!svn/ver/205/trunk/cms_rails/app/views/announcements
+/svn/!svn/ver/217/trunk/cms_rails/app/views/announcements
 END
 edit.html.erb
 K 25
@@ -13,7 +13,7 @@ index.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/!svn/ver/168/trunk/cms_rails/app/views/announcements/index.html.erb
+/svn/!svn/ver/213/trunk/cms_rails/app/views/announcements/index.html.erb
 END
 new.html.erb
 K 25
@@ -37,7 +37,7 @@ _form.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/!svn/ver/149/trunk/cms_rails/app/views/announcements/_form.html.erb
+/svn/!svn/ver/217/trunk/cms_rails/app/views/announcements/_form.html.erb
 END
 index.json.rabl
 K 25

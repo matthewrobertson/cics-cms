@@ -29,6 +29,10 @@ color: white;
 
 }
 
+.default-div{
+   margin-top: 12px;
+}
+
 
 .dash-bg{
    background-color: white;
@@ -345,3 +349,41 @@ background-image: linear-gradient(top,#fee94f 0,#fd9a0f 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fee94f',endColorstr='#fd9a0f',GradientType=0);
 border-color: #FA2;
 }
+
+
+
+.alert-block {
+padding-top: 12px;
+padding-bottom: 12px;
+}
+
+.alert-danger, .alert-error, .alert-danger .alert-heading, .alert-error .alert-heading {
+color: blue;
+}
+
+.alert-danger, .alert-error {
+background-color: white;
+border-color: white;
+}
+
+.alert, .alert-heading {
+color: black;
+}
+
+
+.alert {
+padding: 8px 32px 2px 18px;
+margin-bottom: 12px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+background-color: white;
+border: 0px;
+
+}
+
+.announcement_border{
+border-top: 1px solid black;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+

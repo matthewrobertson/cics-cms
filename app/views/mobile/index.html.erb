@@ -3,21 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= csrf_meta_tag %>
     <title>ProjectBox Mobile</title>
+    <%= stylesheet_link_tag "jquery_mobile" %>
+    <%= javascript_tag do %>
+      <% if @user %>
+    		window.current_user = <%=raw @user.to_json %>;
+      <% end %>
+	<% end %>
     <%= javascript_include_tag "mobile_app" %>
+	
   </head>
   <body>
 	
-	<div id="loginDiv">
-	<form id="login-form">
-	  Username: <input type="text" id="email"><br>
-	  Password: <input type="password" id="password"><br>
-	  <button id="login">Login</button>
-	</form>
-	</div>	
-	
-	<div id="projectsDiv">
-	</div>
   
   </body>
 </html>

@@ -5,17 +5,17 @@ CmsRails::Application.routes.draw do
 
   resources :staffs
 
-  resources :announcements
-
   resources :projects do
     resources :resources, :shallow => true
+    resources :announcements, :shallow => true
   end
 
-  
-  
+
+
   resources :sessions
   
   resources :users
+  resources :password_resets
   
   match 'login' => 'sessions#new', :as => :login
   match 'logout' => 'sessions#destroy', :as => :logout
@@ -28,6 +28,7 @@ CmsRails::Application.routes.draw do
   match 'contributions/create/:project_id/:user_id' => "contributions#create", :as => :join_project, :via => :get
 
   match 'mobile' => "mobile#index"
+  match 'current_projects' => "my_projects#index"
   
 
   root :to => 'sessions#new'

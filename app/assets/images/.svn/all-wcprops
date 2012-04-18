@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/!svn/ver/212/trunk/cms_rails/app/assets/images
+/svn/!svn/ver/223/trunk/cms_rails/app/assets/images
 END
 mountains.png
 K 25
@@ -20,6 +20,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 60
 /svn/!svn/ver/152/trunk/cms_rails/app/assets/images/city.png
+END
+ajax-loader.gif
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/223/trunk/cms_rails/app/assets/images/ajax-loader.gif
 END
 rails.png
 K 25

@@ -1,19 +1,49 @@
 K 25
 svn:wc:ra_dav:version-url
 V 56
-/svn/!svn/ver/209/trunk/cms_rails/app/assets/javascripts
+/svn/!svn/ver/229/trunk/cms_rails/app/assets/javascripts
+END
+my_resources.js.coffee
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/218/trunk/cms_rails/app/assets/javascripts/my_resources.js.coffee
+END
+jquery_mobile.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/223/trunk/cms_rails/app/assets/javascripts/jquery_mobile.js
 END
 mobile_app.js
 K 25
 svn:wc:ra_dav:version-url
 V 70
-/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts/mobile_app.js
+/svn/!svn/ver/223/trunk/cms_rails/app/assets/javascripts/mobile_app.js
 END
 cms_rails.js
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/!svn/ver/209/trunk/cms_rails/app/assets/javascripts/cms_rails.js
+/svn/!svn/ver/227/trunk/cms_rails/app/assets/javascripts/cms_rails.js
+END
+cordova-1.5.0.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/229/trunk/cms_rails/app/assets/javascripts/cordova-1.5.0.js
+END
+password_resets.js.coffee
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/218/trunk/cms_rails/app/assets/javascripts/password_resets.js.coffee
+END
+jquery_mobile_configs.js
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/223/trunk/cms_rails/app/assets/javascripts/jquery_mobile_configs.js
 END
 application.js
 K 25

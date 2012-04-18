@@ -1,10 +1,19 @@
 <div class="project-view-title">
-<h1>My Network</h1>
+<h1>Members Database</h1>
+<div>
+	<form method="get" action="">
+		<input type="text" name="search">
+		<input class="btn btn-primary" type="submit" value="Search">
+	</form>
+</div>
+ <% if @users %>
+	<% if @users.empty? %>
+		<p class='alert error'>Your search did not return any results, please try again</p>
+	<% else %>
 <table class="table table-striped">
   <thead>
     <tr>
       <th>Full Name</th>
-      <th>Email</th>
       <th>Member Since</th>
       <th>Actions</th>
     </tr>
@@ -17,13 +26,20 @@
             <%else%>
                 <td><%= user.full_name %></td>
         <%end%>
-        <td><%= user.email %></td>
         <td><%= user.created_at.to_s(:slash_date) %></td>
-        <td><%= link_to 'Message',  "#", :class => 'btn btn-mini' %></td>
+        <td>
+
+          <%= link_to 'Mail',  "#", :class => 'btn btn-success btn-mini' %>
+          <%= link_to ' Invite ',  "#", :class => 'btn btn-create btn-mini' %>
+
+        </td>
+
       </tr>
     <% end %>
   </tbody>
 </table>
-    </div>
+<%end%>
+<% end %>
+   </div>
 
 

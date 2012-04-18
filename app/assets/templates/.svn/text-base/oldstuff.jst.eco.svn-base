@@ -1,0 +1,11 @@
+<ul id="projectsDiv" data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+		
+	</ul>
+  
+  	<div id="uploadDiv">
+  		<button onclick="capturePhoto();">Capture Photo</button> <br>
+    	<button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+    	<button onclick="upload();">Upload</button> <br>
+    	<img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+    	<img style="display:none;width:60px;height:60px;" id="largeImage" src="" />
+  	</div>

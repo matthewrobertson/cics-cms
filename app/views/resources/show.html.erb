@@ -1,43 +1,55 @@
-<h1>Resource</h1>
+<div class="project-view-title">
+  <h1><%= @resource.name %></h1>
 
-<p>
-  <b>User</b><br>
-  <%= @resource.user_id %>
-</p>
+  <div class='row'>
+    <% if @resource.image_attached? %>
+      <div class='span2'>
+        <img src='<%= @resource.file.url %>' />
+      </div>
+    <% end %>
+    <div class="span5">
+      <div class='row'>
+        <div class='span2'>Uploaded By:</div>
+        <div class='span3'><%= @resource.user.name %></div>
+      </div>
 
-<p>
-  <b>Project</b><br>
-  <%= @resource.project_id %>
-</p>
+      <div class='row'>
+        <div class='span2'>Uploaded On:</div>
+        <div class='span3'><%= @resource.created_at.to_s(:slash_time) %></div>
+      </div>
 
-<p>
-  <b>Name</b><br>
-  <%= @resource.name %>
-</p>
+      <div class='row'>
+        <div class='span2'>Project</div>
+        <div class='span3'><%= @resource.project.name %></div>
+      </div>
 
-<p>
-  <b>Version</b><br>
-  <%= @resource.version %>
-</p>
+      <div class='row'>
+        <div class='span2'>Version</div>
+        <div class='span3'><%= @resource.version %></div>
+      </div class='row'>
 
-<p>
-  <b>Description</b><br>
-  <%= @resource.description %>
-</p>
+      <div class='row'>
+        <div class='span2'>Description</div>
+        <div class='span3'><%= @resource.description %></div>
+      </div class='row'>
 
-<p>
-  <b>Mime</b><br>
-  <%= @resource.mime %>
-</p>
+      <div class='row'>
+        <div class='span2'>Mime</div>
+        <div class='span3'><%= @resource.mime %></div>
+      </div>
 
-<p>
-  <b>Get</b><br>
-  <%= link_to @resource.file_name, @resource.file.url %>
-</p>
+      <div class='row'>
+        <div class='span2'>Get</div>
+        <div class='span3'><%= link_to @resource.file_name, @resource.file.url %></div>
+      </div>
+    </div>
+  </div>
 
 
-<div class="form-actions">
-  <%= link_to 'Back', project_path(@resource.project), :class => 'btn'  %>
-  <%= link_to 'Edit', edit_resource_path(@resource), :class => 'btn' %>
-  <%= link_to 'Delete', resource_path(@resource), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+  <div class="form-actions">
+    <%= link_to 'Back', project_path(@resource.project), :class => 'btn btn-primary'  %>
+    <%= link_to 'Edit', edit_resource_path(@resource), :class => 'btn btn-create' %>
+    <%= link_to 'Delete', resource_path(@resource), :method => 'delete', :confirm => 'Are you sure?', :class => 'btn btn-danger' %>
+  </div>
+
 </div>

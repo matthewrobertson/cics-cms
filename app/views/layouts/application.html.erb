@@ -54,9 +54,9 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <% if current_user.notifications > 0 %>
                                     <i class="icon-white icon-envelope"></i>
-					<%= current_user.notifications %></a>
-                                     <ul class="dropdown-menu">
-                                        <li><%= link_to 'Notifications', "/notifications" %></li>
+					                <%= current_user.notifications %></a>
+                                    <ul class="dropdown-menu">
+                                    <li><%= link_to 'Notifications', "/notifications" %></li>
                                     </ul>
                                 <%end%>
                             </li>
@@ -66,19 +66,15 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="icon-white icon-user"></i><%= current_user.name %></a>
                             <ul class="dropdown-menu">
-
-                                <li><%= link_to (edit_user_path(current_user)) do %>
-				<i class=" icon-black icon-cog"></i>Settings<%end%>
-				</li>
-
-                                <li><%= link_to (logout_path) do %>
-				<i class=" icon-black icon-off"></i>Logout <%end%>
-				</li>
+                            <li><%= link_to (edit_user_path(current_user)) do %>
+				                <i class=" icon-black icon-cog"></i>Settings<%end%>
+				            </li>
+                            <li><%= link_to (logout_path) do %>
+				                <i class=" icon-black icon-off"></i>Logout <%end%>
+				            </li>
                             </ul>
                         </li>
-
                     </ul>
-
 
                 <% else %>
           	    Hey Stranger <%= link_to "login", login_path %> or <%= link_to "register", new_user_path %>
@@ -107,10 +103,6 @@
                     <i class="icon-black icon-home"></i>Dashboard
                     <% end %>
                   </li>
-                  <li><%= link_to(  "/search" ) do %>
-                    <i class="icon-black icon-search"></i>Search
-                    <% end %>
-                  </li>
                   <li>
                    <%= link_to (users_path) do %>
                     <i class="icon-black icon-user"></i>Members
@@ -122,10 +114,6 @@
                   </li>
                    <li><%= link_to "#" do %>
                     <i class="icon-black icon-picture"></i>Resources
-                    <% end %>
-                  </li>
-                   <li><%= link_to ( "/notifications") do %>
-                    <i class="icon-black icon-envelope"></i>Notifications
                     <% end %>
                   </li>
                    <li><%= link_to( "/help" ) do %>

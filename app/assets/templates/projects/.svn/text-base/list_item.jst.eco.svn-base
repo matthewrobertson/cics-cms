@@ -1,0 +1,11 @@
+<div class="ui-btn-inner ui-li">
+<div class="ui-btn-text">
+<a href="#project/<%= @id %>" class="ui-link-inherit">
+<p class="ui-li-aside ui-li-desc"><strong>6:24</strong>PM</p>				
+<h3 class="ui-li-heading"><%= @name %></h3>
+<p class="ui-li-desc"><%= @users.length %> contributors</p>
+<p class="ui-li-desc"><%= @resources.length %> resources</p>
+</a>
+</div>
+<span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span>
+</div>

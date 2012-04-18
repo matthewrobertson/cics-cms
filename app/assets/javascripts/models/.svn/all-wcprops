@@ -1,5 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svn/!svn/ver/180/trunk/cms_rails/app/assets/javascripts/models
+/svn/!svn/ver/225/trunk/cms_rails/app/assets/javascripts/models
+END
+project.js
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/225/trunk/cms_rails/app/assets/javascripts/models/project.js
+END
+login.js
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/223/trunk/cms_rails/app/assets/javascripts/models/login.js
+END
+user.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/223/trunk/cms_rails/app/assets/javascripts/models/user.js
 END

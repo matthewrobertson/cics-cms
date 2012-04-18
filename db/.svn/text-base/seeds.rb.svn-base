@@ -61,7 +61,7 @@ Resource.delete_all
 				:mime		=> "pdf"
 			)
 			r.user = u
-    			r.project = p
+    	r.project = p
 			r.save
 			end
 		end		
