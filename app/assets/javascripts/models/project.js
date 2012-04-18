@@ -22,7 +22,7 @@ CmsRails.Models.Project = Backbone.Model.extend({
 
         var ft = new FileTransfer();
         //ft.upload(imageURI, "http://192.168.1.5:3000/projects/1/resources/new.rabl", onPhotoUploadSuccess, onFail, options);
-        ft.upload(imageURI, "http://128.189.228.144:3000/projects/" + this.id + "/resources/", function(){}, function(){}, options);
+        ft.upload(imageURI, "/projects/" + this.id + "/resources/", function(){}, function(){}, options);
     }
 							
 });
