@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "ec2-23-20-139-208.compute-1.amazonaws.com", :web, :app, :db, primary: true
+server "ec2-23-21-28-8.compute-1.amazonaws.com", :web, :app, :db, primary: true
 
 set :application, "project_box"
 set :user, "ubuntu"
