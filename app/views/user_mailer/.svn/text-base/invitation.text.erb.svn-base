@@ -1,0 +1,13 @@
+Hi,
+
+You have been invited to join a project box project!
+
+<%= @user.name %> is requesting to join the project <%= @project.name %>. Please follow this link to do so:
+
+<%= project_invitations_url @project %>
+
+You can also contact <%= @user.name%> directly at <%=@user.email%>.
+
+Thanks,
+
+The project box team

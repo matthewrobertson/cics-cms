@@ -1,3 +1,3 @@
 collection @projects
 
-extends "projects/show"
+extends "my_projects/show"

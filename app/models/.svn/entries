@@ -1,15 +1,15 @@
 10
 
 dir
-229
+278
 https://cics530-430-cms.googlecode.com/svn/trunk/cms_rails/app/models
 https://cics530-430-cms.googlecode.com/svn
 
 
 
-2012-04-13T01:53:39.797032Z
-221
-lillianxu415@gmail.com
+2012-04-23T00:40:19.062077Z
+275
+matthewrobertson03@gmail.com
 
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2012-04-13T01:59:59.000000Z
+2012-04-23T00:12:40.000000Z
 bc2bf7eea5ef3679d50ad83492ccafca
-2012-04-13T01:53:39.797032Z
-221
-lillianxu415@gmail.com
+2012-04-23T00:40:19.062077Z
+275
+matthewrobertson03@gmail.com
 
 
 
@@ -161,6 +161,40 @@ matthewrobertson03@gmail.com
 
 
 0
+
+invitation.rb
+file
+
+
+
+
+2012-04-23T00:18:08.000000Z
+3827fee8e2a64a8077f45a319823df2f
+2012-04-23T00:40:19.062077Z
+275
+matthewrobertson03@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+494
 
 project.rb
 file

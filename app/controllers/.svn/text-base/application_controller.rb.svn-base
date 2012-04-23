@@ -13,6 +13,7 @@ class ApplicationController < ActionController::Base
   
   def is_logged_in
     if current_user.nil? 
+      session[:cached_path] = request.url
       redirect_to login_url, :alert => "Please login First!" 
       return false
     end

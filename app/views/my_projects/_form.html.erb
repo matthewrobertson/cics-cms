@@ -1,16 +1,15 @@
 <%= simple_form_for @project, :html => { :class => 'form-horizontal project-listing-header front-signup signup' } do |f| %>
   <fieldset>
-        <legend><%= controller.action_name.capitalize %> Project</legend>
+        <legend><h3>&nbsp;<%= controller.action_name.capitalize %> Project</h3></legend>
     
     <%= f.input :started_at, :as => :date, :order => [:month, :year] %>
     <%= f.input :ending_at, :as => :date, :order => [:month, :year] %>
     <%= f.input :name %>
-    <%= f.input :description, :as => 'text' %>
-   
-    
+    <div class="control-group text required"><label class="text required control-label" for="project_description"><abbr title="required">*</abbr> Description</label><div class="controls"><textarea class="text required" cols="40" id="project_description" name="project[description]" rows="10"></textarea></div></div>
+
     <div class="form-actions">
       <%= f.submit nil, :class => 'btn btn-create signup-btn' %>
-      <%= link_to 'Cancel', @project, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', user_path(current_user), :class => 'btn btn-primary' %>
     </div>
   </fieldset>
 <% end %>

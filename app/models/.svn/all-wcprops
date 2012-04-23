@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/svn/!svn/ver/221/trunk/cms_rails/app/models
+/svn/!svn/ver/275/trunk/cms_rails/app/models
 END
 ability.rb
 K 25
@@ -13,7 +13,7 @@ user.rb
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/!svn/ver/221/trunk/cms_rails/app/models/user.rb
+/svn/!svn/ver/275/trunk/cms_rails/app/models/user.rb
 END
 contribution.rb
 K 25
@@ -26,6 +26,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 51
 /svn/!svn/ver/4/trunk/cms_rails/app/models/.gitkeep
+END
+invitation.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/275/trunk/cms_rails/app/models/invitation.rb
 END
 project.rb
 K 25

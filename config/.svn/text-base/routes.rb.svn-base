@@ -8,6 +8,8 @@ CmsRails::Application.routes.draw do
   resources :projects do
     resources :resources, :shallow => true
     resources :announcements, :shallow => true
+    resources :invitations
+    resources :contributions, :only => :destroy
   end
 
 
@@ -28,7 +30,9 @@ CmsRails::Application.routes.draw do
   match 'contributions/create/:project_id/:user_id' => "contributions#create", :as => :join_project, :via => :get
 
   match 'mobile' => "mobile#index"
-  
+  match 'current_projects' => "my_projects#index"
+
+  match 'help' => "sessions#help"
 
   root :to => 'sessions#new'
 

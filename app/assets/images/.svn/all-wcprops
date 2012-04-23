@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/svn/!svn/ver/223/trunk/cms_rails/app/assets/images
+/svn/!svn/ver/270/trunk/cms_rails/app/assets/images
 END
 mountains.png
 K 25
@@ -14,6 +14,24 @@ K 25
 svn:wc:ra_dav:version-url
 V 79
 /svn/!svn/ver/152/trunk/cms_rails/app/assets/images/projectbox_logo_top_bar.png
+END
+front1.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/270/trunk/cms_rails/app/assets/images/front1.jpg
+END
+front2.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/270/trunk/cms_rails/app/assets/images/front2.jpg
+END
+front3.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/270/trunk/cms_rails/app/assets/images/front3.jpg
 END
 city.png
 K 25

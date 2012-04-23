@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/svn/!svn/ver/228/trunk/cms_rails
+/svn/!svn/ver/278/trunk/cms_rails
 END
 Gemfile.lock
 K 25
 svn:wc:ra_dav:version-url
 V 46
-/svn/!svn/ver/223/trunk/cms_rails/Gemfile.lock
+/svn/!svn/ver/277/trunk/cms_rails/Gemfile.lock
 END
 Rakefile
 K 25
@@ -37,7 +37,7 @@ Gemfile
 K 25
 svn:wc:ra_dav:version-url
 V 41
-/svn/!svn/ver/218/trunk/cms_rails/Gemfile
+/svn/!svn/ver/277/trunk/cms_rails/Gemfile
 END
 config.ru
 K 25
@@ -56,4 +56,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 40
 /svn/!svn/ver/181/trunk/cms_rails/README
+END
+test.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/260/trunk/cms_rails/test.jpg
 END

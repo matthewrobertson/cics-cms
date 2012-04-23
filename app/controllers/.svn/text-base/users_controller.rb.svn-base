@@ -39,7 +39,14 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       session[:user_id] = @user.id
-      redirect_to @user, :notice => "Successfully created user."
+      if session[:cached_path]
+        path = session[:cached_path]
+        session[:cached_path] = nil
+        redirect_to path, :notice => "Account created you are now logged in!" 
+      else
+        redirect_to @user, :notice => "Successfully created user."
+      end
+      
     else
       render :action => 'new'
     end

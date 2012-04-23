@@ -63,11 +63,21 @@
                 	<table>
                 		<tr>
                 			<th>Contributors:</th>
-                            <td><%= mp.users.count %></td>
+                          <%if mp.users.count == 0 %>
+                           <td><span class="badge badge-warning"><%= mp.users.count %></span> &nbsp;&nbsp;<b>Invite some!</b></td>
+                              <%else%>
+                            <td><span class="badge badge-success"><%= mp.users.count %></span></td>
+                              <%end%>
+
                 		</tr>
                 		<tr>
                 			<th>Resources:</th>
-                			<td><%= mp.resources.count %></td>
+                           <%if  mp.resources.count  == 0 %>
+                           <td><span class="badge badge-warning"><%=  mp.resources.count  %></span>&nbsp;&nbsp;<b>Add some!</b></td>
+                              <%else%>
+                            <td><span class="badge badge-success"><%=  mp.resources.count  %></span></td>
+                              <%end%>
+
                 		</tr>
                 	</table>
 
@@ -120,11 +130,19 @@
                 	<table>
                 		<tr>
                 			<th>Contributors:</th>
-                			<td><%= mp.users.count %></td>
+                          <%if mp.users.count  == 0 %>
+                           <td><span class="badge badge-warning"><%= mp.users.count %></span> &nbsp;&nbsp;<b>Invite some!</b></td>
+                              <%else%>
+                            <td><span class="badge badge-success"><%= mp.users.count %></span></td>
+                              <%end%>
                 		</tr>
                 		<tr>
                 			<th>Resources:</th>
-                			<td><%= mp.resources.count %></td>
+                           <%if  mp.resources.count  == 0 %>
+                           <td><span class="badge badge-warning"><%=  mp.resources.count  %></span>&nbsp;&nbsp;<b>Add some!</b></td>
+                              <%else%>
+                            <td><span class="badge badge-success"><%=  mp.resources.count  %></span></td>
+                              <%end%>
                 		</tr>
                 	</table>
 
@@ -136,7 +154,8 @@
               </div>
             </div>
 <% end %>
-            <p>
+ <p></p>
+      <p>
               <%= link_to "Join One", projects_path, :class => "btn btn-create" %>
             </p>
 <% end %>

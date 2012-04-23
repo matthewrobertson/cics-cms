@@ -18,7 +18,12 @@ class ResourcesController < ApplicationController
   end
 
   def create
-    @resource = @project.resources.build(params[:resource])
+    #unless fname.kind_of? String
+    if params[:resource]
+      @resource = @project.resources.build(params[:resource])
+    else
+      @resource = @project.resources.build(params)
+    end
     @resource.version = 1
     @resource.user = current_user
     if @resource.save
@@ -37,7 +42,7 @@ class ResourcesController < ApplicationController
     if @resource.update_attributes(params[:resource])
       @resource.version += 1
       @resource.save!
-      redirect_to @resource, :notice  => "Successfully updated resource."
+      redirect_to @resource.project, :notice  => "Successfully updated resource."
     else
       render :action => 'edit'
     end
@@ -45,8 +50,8 @@ class ResourcesController < ApplicationController
 
   def destroy
     @resource = Resource.find(params[:id])
-    @resource.destroy
-    redirect_to @project, :notice => "Successfully destroyed resource."
+    @resource.delete
+    redirect_to @resource.project, :notice => "Successfully destroyed resource."
   end
 
   private

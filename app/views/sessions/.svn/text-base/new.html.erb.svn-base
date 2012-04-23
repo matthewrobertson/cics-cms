@@ -1,7 +1,42 @@
 
 
 
- <div class="front-welcome"></div>
+
+ <div id="myCarousel" class="carousel">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item">
+      <img src ="/assets/front1.jpg">
+      <div class="carousel-caption">
+                  <h4>Sharing resources is only a click away!</h4>
+                  <p>Upload files from your workstation, laptop, mobile phone from anywhere in the world. Now everyone on your
+                  team can collaborate with ease.</p>
+                </div>
+
+      </div>
+    <div class="item">
+      <img src ="/assets/front2.jpg">
+          <div class="carousel-caption">
+                  <h4>Mobile support for Android, and Mobile web</h4>
+                  <p>Take a picture from your Android smart phone, or browse your projects with a mobile browser.  Our technology
+                  allows the ProjectBox website to be views anywhere, anytime, and anyhow.</p>
+                </div>
+    </div>
+    <div class="item">
+      <img src ="/assets/front3.jpg">
+            <div class="carousel-caption">
+                  <h4>Smart Team Management</h4>
+                  <p>Looking for new talent?  Members not earning their keep?  Invite or kick members with a single stroke.</p>
+                </div>
+
+    </div>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+
 
 <div class="front-signin default-div" >
 <%= form_tag sessions_path, :class =>"signin" do %>
@@ -31,5 +66,7 @@
         </div>
 <% end %>
 </div>
+
+ <div class = "default-div"></div>
 
       

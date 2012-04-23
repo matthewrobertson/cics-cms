@@ -1,11 +1,22 @@
 <div data-role="header">
 	<a href="#projects" data-icon="back" id="back_btn">Back</a>
+	<a href="/logout" data-icon="logout" id="logout_btn">Logout</a>
 	<h1><%= @name %></h1>
 </div><!-- /header -->
 
 <div data-role="content">	
+	<div id="resources">
+		<h2>Project Resources</h2>
+		<ul data-role="listview" data-inset='true' data-theme="c">
+			<%- '<li><a href="' + (i.dl_url || i.url) + '">'+ i.name + '</a></li>' for i in @resources %>
+			
+		
+		</ul>
+	</div>
+
 	<div id="photo-div">
-		<button onclick="capturePhoto();">Capture Photo</button> <br>
-		<button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Upload Photo</button> <br>
+		<h2>Upload New</h2>
+		<button id='capturePhoto'>Capture Photo</button> <br>
+		<button id='uploadPhoto'>Upload Photo</button>
 	</div>	
 </div>

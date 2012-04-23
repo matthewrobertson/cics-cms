@@ -13,5 +13,4 @@ end
 
 child :contributions do
   attributes :id
-  
 end

@@ -81,7 +81,7 @@ ActiveAdmin.setup do |config|
   config.logout_link_path = :logout_path
 
    # Turn off authentication all together
-  config.authentication_method = true
+  #config.authentication_method = true
   config.current_user_method   = :current_user
 
   # This setting changes the http method used when rendering the

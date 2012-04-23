@@ -1,0 +1,27 @@
+Hybrid variational shape approximation
+
+
+
+unsure of what xi, ni was
+
+
+
+
+seemed to know what the paper was about.
+
+
+wasnt clear from the presentation regarding the voroni diagram, however the slides made it obvious--so wasnt sure how important this was until mentioned by professor.
+
+
+
+
+geo brush
+-------------------------
+
+
+he explained the workflow, then showed us a video about the workflow.
+
+
+
+
+

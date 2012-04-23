@@ -37,13 +37,13 @@ class AnnouncementsController < ApplicationController
     @announcement = Announcement.find(params[:id])
     @announcement.update_attributes(params[:announcement])
     flash[:notice]  = "Successfully updated announcement." if @announcement.valid?
-    respond_with @announcement
+    respond_with @announcement.project
   end
 
   def destroy
     @announcement = Announcement.find(params[:id])
-    @announcement.destroy
-    respond_with @announcement
+    @announcement.delete
+    redirect_to @announcement.project, :notice => "Successfully deleted announcement."
   end
 
   def find_project

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 53
-/svn/!svn/ver/221/trunk/cms_rails/config/initializers
+/svn/!svn/ver/273/trunk/cms_rails/config/initializers
 END
 inflections.rb
 K 25
@@ -25,7 +25,7 @@ active_admin.rb
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/svn/!svn/ver/221/trunk/cms_rails/config/initializers/active_admin.rb
+/svn/!svn/ver/259/trunk/cms_rails/config/initializers/active_admin.rb
 END
 secret_token.rb
 K 25
@@ -44,6 +44,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 74
 /svn/!svn/ver/4/trunk/cms_rails/config/initializers/backtrace_silencers.rb
+END
+email.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/273/trunk/cms_rails/config/initializers/email.rb
 END
 time_formats.rb
 K 25

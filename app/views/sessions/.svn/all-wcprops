@@ -1,11 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/!svn/ver/218/trunk/cms_rails/app/views/sessions
+/svn/!svn/ver/271/trunk/cms_rails/app/views/sessions
+END
+help.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/268/trunk/cms_rails/app/views/sessions/help.html.erb
 END
 new.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/svn/!svn/ver/218/trunk/cms_rails/app/views/sessions/new.html.erb
+/svn/!svn/ver/271/trunk/cms_rails/app/views/sessions/new.html.erb
 END

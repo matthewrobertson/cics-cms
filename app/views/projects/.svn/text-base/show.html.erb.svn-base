@@ -2,6 +2,7 @@
 <div id="projects" data-projects="<%= render(template: "projects/index.json.rabl") %>" >
 
 
+
 <div class="accordion project-view-title" id="accordion1">
 
 <h1><%= @project.name %></h1>
@@ -22,7 +23,7 @@
 <div class="accordion-group ">
 
   <div class="accordion-heading project-listing-header">
-    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#managedCollapse0">
+    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#managedCollapse0">
      Show/Hide <%= @project_announcements.count %>  Announcements
     </a>
   </div>
@@ -36,7 +37,30 @@
       <div class="alert alert-block fade in announcement_border">
         <p><%= pa.content %></p>
       </div>
-      <h7>Created: <%= pa.created_at%></h7>
+              <%if current_user == pa.user or current_user == @project.owner %>
+      <table>
+        <tbody>
+        <tr>
+          <td>
+            <h7>Created: <%= pa.created_at%>&nbsp;&nbsp;&nbsp;&nbsp;</h7>
+
+          </td>
+          <td>
+            <%= link_to "Edit", edit_announcement_path(pa), :class => "btn btn-mini btn-create" %>
+          </td>
+          <td>
+            <%= link_to 'Delete', announcement_path(pa),
+                                 :method => :delete,
+                                 :confirm => 'Are you sure?',
+                                 :class => 'btn btn-mini btn-danger' %>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+
+            <%end%>
+  <hr>
 </div>
 <%end%>
 
@@ -69,7 +93,7 @@
             <h4 class="alert-heading">No contributors found!</h4>
             <p>Why not invite some members from your online social network?</p>
             <p>
-              <%= link_to "Find One", users_path, :class => "btn btn-primary" %>
+              <%= link_to "Find One", new_project_invitation_path(@project), :class => "btn btn-primary" %>
             </p>
           </div>
 
@@ -81,7 +105,7 @@
 
               <div class="accordion-heading project-listing-header">
                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#managedCollapse1">
-                         Show/Hide <%= @managed_users.count - 1 %> Contributors
+                         Show/Hide <%= @managed_users.count%> Contributors
                 </a>
               </div>
               <div id="managedCollapse1" class="accordion-body collapse" style="height: 0px; ">
@@ -98,20 +122,22 @@
         </tr>
       </thead>
     <tbody>
+       <% @managed_users.each do |pc| %>
     <tr>
-        <% @managed_users.each do |pc| %>
+
             <% if pc != @project.owner %>
               <td><%= pc.name %></td>
               <td><%= pc.email %></td>
 
             <%if current_user == @project.owner %>
-                  <td><%= link_to "Remove", "#", :class => "btn btn-mini btn-danger" %></td>
+                  <td><%= link_to "Remove", project_contribution_path(@project, pc), :class => "btn btn-mini btn-danger", :confirm => 'Are you sure?', :method => :delete %></td>
             <%end%>
 
 
             <%end%>
-        <% end %>
+
     </tr>
+         <% end %>
     </tbody>
     </table>
     </div>
@@ -122,7 +148,7 @@
        <p>
          <%if current_user == @project.owner %>
 
-<%= link_to "Add contributors", users_path, :class => "btn btn-create" %>
+<%= link_to "Add contributors", new_project_invitation_path(@project), :class => "btn btn-create" %>
 
 
           <%end%>
@@ -188,12 +214,14 @@
         <td><%= pr.version %></td>
         <td>
           <% if pr.file.url %>
-          <%= link_to "Download", pr.file.url, :class => "btn btn-mini btn-success" %>
-          <% end %>
+          <%= link_to "Get", pr.file.url, :class => "btn btn-mini btn-success" %>
+          <% else %>
+               error: file not found
+              <%end%>
 
-          <%if pr.user_id == current_user.id%>
-          <%= link_to "Replace", edit_resource_path(pr), :class => "btn btn-mini btn-create" %>
-          <%= link_to "Delete", edit_resource_path(pr), :class => "btn btn-mini btn-danger" %>
+          <%if pr.user_id == current_user.id || current_user == @project.owner%>
+          <%= link_to "Edit", edit_resource_path(pr), :class => "btn btn-mini btn-create" %>
+          <%= link_to 'Delete', resource_path(pr), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
 
           <%end%>
         </td>

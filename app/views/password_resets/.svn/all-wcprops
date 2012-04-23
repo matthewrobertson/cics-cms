@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/svn/!svn/ver/218/trunk/cms_rails/app/views/password_resets
+/svn/!svn/ver/274/trunk/cms_rails/app/views/password_resets
 END
 edit.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 73
-/svn/!svn/ver/218/trunk/cms_rails/app/views/password_resets/edit.html.erb
+/svn/!svn/ver/274/trunk/cms_rails/app/views/password_resets/edit.html.erb
 END
 new.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 72
-/svn/!svn/ver/218/trunk/cms_rails/app/views/password_resets/new.html.erb
+/svn/!svn/ver/274/trunk/cms_rails/app/views/password_resets/new.html.erb
 END

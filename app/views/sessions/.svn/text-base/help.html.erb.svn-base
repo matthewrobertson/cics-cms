@@ -1,0 +1,108 @@
+<div class="project-view-title">
+<h1>ProjectBox Help</h1>
+<br>
+
+<table class="table table-striped">
+
+  <tbody>
+      <tr>
+
+<h3>1.0 GETTING STARTED</h3>
+        <br>
+        </tr>
+      <tr>
+<h4>	Logging On    </h4>
+<p>Once you have registered with your name, preferred name, and your validation e-mail,
+  you simply enter your email address as username and password in the Login Form and click
+  the Sign In button to login to the web site. For new users, they can click Sign up button
+  and fill the register form showing below:           </p>
+     <br>
+      <img src="assets/help/fig1.jpg" />
+
+       <br>
+ <p>Notice that people can only registered as users, they cannot register as administrators. Only existed administrators can create now administrators.</p>
+
+      <br>
+      </tr>
+
+<tr>
+<h4>	System Menu    </h4>
+   <br>
+<p>Once you have logged as a user in to the web site you will notice that an Explorer menu appears in the left navigation pane. </p>
+   <br>
+<img src="assets/help/fig2.jpg" />
+
+  <br>
+</tr>
+
+
+  <tr>
+<h4>	Changing User ID and Password   </h4>
+     <br>
+<p>Once you login, your name is shown on upper right corner of the website page. A dropdown will show if the name is clicked. Click Settings, a user update page is displayed. User can change personal information here including User ID, name, preferred name and password. After filling in the form, click User Update button to update user information. </p>
+      <br>
+<img src="assets/help/fig3.jpg" />
+    <br>
+
+</tr>
+
+  <tr>
+    <h3>2.0 USER INTERFACE</h3>
+     <br>
+  </tr>
+
+   <tr>
+<h4>	Dashboard   </h4>
+      <br>
+<p>After login, a dashboard is displayed. It shows announcements from administrators, user menu, and the projects the current user manages and contributes. User can create a new project or find a project to join.</p>
+          <br>
+<img src="assets/help/fig4.jpg" />
+      <br>
+
+</tr>
+
+
+      <tr>
+   <h4>	Create New Project   </h4>
+         <br>
+   <p>A new project form will be launched after clicking <b>Create One</b> button on Managed Projects section. By filling in the form, a new project is generated.
+A message will be displayed after a new project is successfully generated.</p>
+             <br>
+           <img src="assets/help/fig6.jpg" />
+         <br>
+
+   </tr>
+
+
+
+
+      <tr>
+   <h4>	Managing Projects   </h4>
+         <br>
+
+   <img src="assets/help/fig7.jpg" />
+
+         <br>
+   </tr>
+
+
+      <tr>
+   <h4>	Managing Resources   </h4>
+ <br>
+
+   <img src="assets/help/fig8.jpg" />
+          <br>
+        <p>
+          By clicking Create One button on Resource section, a project manager can add new resource to this project. After a resource is successfully created, manager can see it on resources table. The manager can download, update and remove this resource via clicking the action buttons: Get, Edit and Delete.
+
+        </p>
+         <br>
+        <img src="assets/help/fig9.jpg" />
+             <br>
+   </tr>
+
+
+
+  </tbody>
+</table>
+   </div>

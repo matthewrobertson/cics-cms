@@ -122,15 +122,19 @@
                   </li>
               <% else %>
                    <li class="nav-header">Discover</li>
-                  <li>
-                   <%= link_to (users_path) do %>
-                    <i class="icon-black icon-user"></i>About
+                  <li><%= link_to ("/mobile") do %>
+                    <i class="icon-black icon-picture"></i>Mobile Support
+                    <% end %>
+                  </li>
+                    <li><%= link_to ("/help") do %>
+                    <i class="icon-black icon-picture"></i><b>Download App!</b>
                     <% end %>
                   </li>
                    <li><%= link_to ("/help") do %>
                     <i class="icon-black icon-picture"></i>Help
                     <% end %>
                   </li>
+
                   <%end%>
 
 

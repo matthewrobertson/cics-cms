@@ -1,11 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 55
-/svn/!svn/ver/218/trunk/cms_rails/app/views/user_mailer
+/svn/!svn/ver/275/trunk/cms_rails/app/views/user_mailer
 END
 password_reset.text.erb
 K 25
 svn:wc:ra_dav:version-url
 V 79
 /svn/!svn/ver/218/trunk/cms_rails/app/views/user_mailer/password_reset.text.erb
+END
+invitation.text.erb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/275/trunk/cms_rails/app/views/user_mailer/invitation.text.erb
 END

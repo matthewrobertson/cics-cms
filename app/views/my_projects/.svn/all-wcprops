@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/!svn/ver/224/trunk/cms_rails/app/views/projects
+/svn/!svn/ver/261/trunk/cms_rails/app/views/projects
 END
 edit.html.erb
 K 25
@@ -25,19 +25,19 @@ show.json.rabl
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/!svn/ver/190/trunk/cms_rails/app/views/projects/show.json.rabl
+/svn/!svn/ver/239/trunk/cms_rails/app/views/projects/show.json.rabl
 END
 show.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 66
-/svn/!svn/ver/224/trunk/cms_rails/app/views/projects/show.html.erb
+/svn/!svn/ver/250/trunk/cms_rails/app/views/projects/show.html.erb
 END
 _form.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/!svn/ver/217/trunk/cms_rails/app/views/projects/_form.html.erb
+/svn/!svn/ver/261/trunk/cms_rails/app/views/projects/_form.html.erb
 END
 index.json.rabl
 K 25

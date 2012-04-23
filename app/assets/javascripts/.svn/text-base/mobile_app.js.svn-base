@@ -9,6 +9,7 @@
 //= require backbone
 //= require jquery_mobile_configs
 //= require jquery_mobile
+//= require cordova-1.5.0.js
 //= require .//cms_rails
 //= require_tree ../templates/
 //= require_tree .//models

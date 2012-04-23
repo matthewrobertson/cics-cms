@@ -1,4 +1,16 @@
+<div class ="form-horizontal project-listing-header front-signup signup">
 <%= form_for @user, :url => password_reset_path(params[:id]) do |f| %>
+
+
+
+      <fieldset>
+    <legend><h3>&nbsp;Password Reset</h3></legend>
+          <p> Enter your new password:</p>
+</fieldset>
+
+
+
+
   <% if @user.errors.any? %>
     <div class="error_messages">
       <h2>Form is invalid</h2>
@@ -10,12 +22,19 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+
+    <%= f.password_field :password,  :placeholder => "New Password" %>
   </div>
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
+  <div class="field default-div">
+      <p> Please confirm your password:</p>
+    <%= f.password_field :password_confirmation,  :placeholder => "Confirmation " %>
   </div>
-  <div class="actions"><%= f.submit "Update Password" %></div>
+
+      <div class="form-actions">
+<%= f.submit "Update Password", :class => 'btn btn-create signup-btn' %>
+<%= link_to 'Cancel',login_path, :class => 'btn btn-primary' %>
+</div>
+
+
 <% end %>
+    </div>

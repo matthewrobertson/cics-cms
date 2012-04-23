@@ -1,15 +1,15 @@
 10
 
 dir
-229
+278
 https://cics530-430-cms.googlecode.com/svn/trunk/cms_rails/app/views
 https://cics530-430-cms.googlecode.com/svn
 
 
 
-2012-04-18T00:47:30.251629Z
-226
-srikanthramu79
+2012-04-23T01:37:43.795326Z
+278
+bbertka
 
 
 
@@ -45,6 +45,9 @@ password_resets
 dir
 
 user_mailer
+dir
+
+invitations
 dir
 
 projects

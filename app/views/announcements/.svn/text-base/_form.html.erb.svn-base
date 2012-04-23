@@ -1,10 +1,15 @@
 <%= simple_form_for [@project, @announcement], :html => { :class => 'form-horizontal project-listing-header front-signup signup', :multipart => true } do |f| %>
   <fieldset>
-    <legend><%= controller.action_name.capitalize %> Announcement</legend>
-
+    <legend><h3>&nbsp;<%= controller.action_name.capitalize %> Announcement</h3></legend>
 
     <%= f.input :topic %>
-    <%= f.input :content, :as => 'text' %>
+    <div class="control-group text required">
+      <label class="text required control-label" for="announcement_content">
+        <abbr title="required">*</abbr> Content</label>
+      <div class="controls">
+        <textarea class="text required" cols="40" id="announcement_content" name="announcement[content]" rows="10"></textarea>
+      </div>
+    </div>
     <%= f.input :kind%>
 
     <div class="form-actions">

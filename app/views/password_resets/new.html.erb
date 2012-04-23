@@ -1,7 +1,14 @@
-<%= form_tag password_resets_path, :method => :post do %>
-  <div class="field">
-    <%= label_tag :email %>
-    <%= text_field_tag :email, params[:email] %>
-  </div>
-  <div class="actions"><%= submit_tag "Reset Password" %></div>
+<%= form_tag password_resets_path, :class => "form-horizontal project-listing-header front-signup signup", :method => :post do %>
+<fieldset>
+    <legend><h3>&nbsp;Password Reset</h3></legend>
+          <p> Enter your Email from which you originally registered to have your password reset. </p>
+  <p>Our mail service will send you a link for you to change your password.</p>
+   <%= text_field_tag :email, params[:email], :placeholder => "Email"%>
+
+
+<div class="form-actions">
+<%= submit_tag "Send", :class => 'btn btn-create signup-btn' %>
+<%= link_to 'Cancel',login_path, :class => 'btn btn-primary' %>
+</div>
+</fieldset>
 <% end %>

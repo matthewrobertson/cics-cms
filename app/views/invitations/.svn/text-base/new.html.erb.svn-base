@@ -1,0 +1,15 @@
+<%= simple_form_for [@project, @invitation], :html => { :class => 'form-horizontal project-listing-header front-signup signup' } do |f| %>
+  <fieldset>
+          <legend><h3>&nbsp;Invite Contributor</h3></legend>
+     <p> Enter the Email for whom you would like to add as a contributor. </p>
+
+
+    <%= f.input :email, :as => :email%>
+
+
+    <div class ="form-actions">
+      <%= f.submit "Send Invitation", :class => 'btn btn-create signup-btn' %>
+      <%= link_to 'Cancel', @project, :class => 'btn btn-primary' %>
+    </div>
+  </fieldset>
+<% end %>

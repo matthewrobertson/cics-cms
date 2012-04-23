@@ -53,16 +53,18 @@ Resource.delete_all
 				
 		if p		
 			5.times do			
-			r= Resource.new(
-				:name		=> Faker::Company.name,
-				:version	=> 1..5,
-				:description	=> Faker::Company.bs,
-				:location	=> "resource",
-				:mime		=> "pdf"
-			)
-			r.user = u
-    	r.project = p
-			r.save
+				r= Resource.new(
+					:name		=> Faker::Company.name,
+					:version	=> 1..5,
+					:description	=> Faker::Company.bs,
+					:location	=> "resource"
+				)
+				r.mime = "image/jpeg"
+				r.file = (File.open(File.join(Rails.root, 'test.jpg')))
+				r.user = u
+	    		r.project = p
+				r.save
+				
 			end
 		end		
 

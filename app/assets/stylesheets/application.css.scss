@@ -387,3 +387,20 @@ border-top: 1px solid black;
 border-radius: 0px;
 }
 
+
+select {
+width: 108px;
+background-color: white;
+}
+
+
+.carousel-inner {
+overflow: hidden;
+width: 520px;
+position: relative;
+}
+
+.carousel-control.right {
+left: 460px;
+right: auto;
+}

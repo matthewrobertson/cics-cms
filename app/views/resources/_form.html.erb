@@ -1,16 +1,18 @@
-<%= simple_form_for [@project, @resource], :html => { :class => 'form-horizontal project-listing-header front-signup signupl', :multipart => true } do |f| %>
+<%= simple_form_for [@project, @resource], :html => { :class => 'form-horizontal project-listing-header front-signup signup', :multipart => true } do |f| %>
   <fieldset>
-    <legend><%= controller.action_name.capitalize %> Resource</legend>
+    <legend><h3>&nbsp;<%= controller.action_name.capitalize %> Resource</h3></legend>
     
     <%= f.input :name %>
-    <%= f.input :description, :as => :text %>
+    <div class="control-group text required"><label class="text required control-label" for="resource_description"><abbr title="required">*</abbr> Description</label><div class="controls"><textarea class="text required" cols="40" id="resource_description" name="resource[description]" rows="10"></textarea></div></div>
     <%= f.input :file, :as => :file %>
 
     <div class="form-actions">
       <%= f.submit nil, :class => 'btn btn-create signup-btn' %>
-      <%= link_to 'Cancel', @project, :class => 'btn btn-primary' %>
+      <%= link_to 'Cancel', project_path(@resource.project), :class => 'btn btn-primary' %>
     </div>
 
   </fieldset>
+
+
 <% end %>
 

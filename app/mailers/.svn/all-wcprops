@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 45
-/svn/!svn/ver/221/trunk/cms_rails/app/mailers
+/svn/!svn/ver/275/trunk/cms_rails/app/mailers
 END
 .gitkeep
 K 25
@@ -13,5 +13,5 @@ user_mailer.rb
 K 25
 svn:wc:ra_dav:version-url
 V 60
-/svn/!svn/ver/221/trunk/cms_rails/app/mailers/user_mailer.rb
+/svn/!svn/ver/275/trunk/cms_rails/app/mailers/user_mailer.rb
 END

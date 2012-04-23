@@ -1,15 +1,15 @@
 10
 
 dir
-228
+278
 https://cics530-430-cms.googlecode.com/svn/trunk/cms_rails/db
 https://cics530-430-cms.googlecode.com/svn
 
 
 
-2012-04-13T01:53:39.797032Z
-221
-lillianxu415@gmail.com
+2012-04-20T02:42:53.682914Z
+259
+matthewrobertson03@gmail.com
 has-props
 
 
@@ -66,11 +66,11 @@ file
 
 
 
-2012-04-11T05:03:01.000000Z
-1c8791a583bdeff49f15bb0889b5c44e
-2012-04-06T06:26:29.031232Z
-217
-bbertka
+2012-04-20T01:08:13.000000Z
+1c42d2b4fd371bb28e6da284e7638816
+2012-04-20T02:42:53.682914Z
+259
+matthewrobertson03@gmail.com
 
 
 
@@ -92,7 +92,7 @@ bbertka
 
 
 
-1856
+1936
 
 migrate
 dir

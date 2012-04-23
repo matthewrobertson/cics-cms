@@ -1,4 +1,4 @@
 CmsRails.Collections.Projects = Backbone.Collection.extend({
-	url: "/projects.json?search=",
-	model: CmsRails.Models.Project
+	url: "/current_projects",
+	model: CmsRails.Models.Project,
 });

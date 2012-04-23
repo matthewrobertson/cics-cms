@@ -27,15 +27,11 @@
                 <td><%= user.full_name %></td>
         <%end%>
         <td><%= user.created_at.to_s(:slash_date) %></td>
-        <td>
-
-          <%= link_to 'Mail',  "#", :class => 'btn btn-success btn-mini' %>
-          <%= link_to ' Invite ',  "#", :class => 'btn btn-create btn-mini' %>
-
-        </td>
+        <td></td>
 
       </tr>
     <% end %>
+
   </tbody>
 </table>
 <%end%>

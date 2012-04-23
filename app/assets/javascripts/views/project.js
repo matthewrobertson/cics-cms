@@ -14,10 +14,6 @@ CmsRails.Views.ProjectLi = Backbone.View.extend({
 });
 
 
-
-
-
-
 CmsRails.Views.ProjectView = Backbone.View.extend({
 
 	template: JST['projects/show'],
@@ -37,10 +33,32 @@ CmsRails.Views.ProjectView = Backbone.View.extend({
 
 		"vclick #uploadPhoto": function(e) {	
 			var that = this;
-			navigator.camera.getPicture(function() {
-				that.uploadSuccess();
+			
+			navigator.camera.getPicture(function(imageURI) {
+							var options = new FileUploadOptions();
+							var desc = "Uploaded from project box mobile app on " + new Date().toDateString() + " at " + new Date().toLocaleTimeString();
+				            options.fileKey="file";
+				            options.fileName=imageURI.substr(imageURI.lastIndexOf('/')+1);
+				            options.mimeType="image/jpeg";
+				
+				            options.params = {
+									name: "Mobile Upload " + options.fileName,
+					            	description: desc,
+									commit: "Create Resource",
+									project_id: that.model.id,
+				           		};
+				            
+				
+				            var ft = new FileTransfer();
+				            //ft.upload(imageURI, "http://ec2-23-21-28-8.compute-1.amazonaws.com/mobile/projects/" + that.model.id + "/resources/", function(){
+				            //ft.upload(imageURI, "http://192.168.43.62:3000/projects/" + that.model.id + "/resources/", function(){
+				            ft.upload(imageURI, "http://ec2-23-21-28-8.compute-1.amazonaws.com/projects/" + that.model.id + "/resources/", function(){	
+				            	alert("Uploaded successfully");
+				            }, function(){
+				            	alert("Uploaded failed");
+				            }, options);
 			}, function() {
-				that.uploadFail();
+				alert("failed to upload photo");
 			}, { quality: 50, 
 	        destinationType: destinationType.FILE_URI,
 	        sourceType: pictureSource.PHOTOLIBRARY });
@@ -49,26 +67,15 @@ CmsRails.Views.ProjectView = Backbone.View.extend({
 		"vclick #capturePhoto": function(e) {
 			var that = this;
 			navigator.camera.getPicture(function() {
-				that.cameraSuccess()
+//				alert("Photo taken successfully");
 			}, function() {
-				that.uploadFail();
+				alert("failed to capture photo");
 			}, { 
 				quality: 50, 
 				destinationType : Camera.DestinationType.DATA_URL 
 			});
 		},
 
-		uploadFail: function() {
-			alert("fail");
-		},
-
-		uploadSuccess: function() {
-			alert("win");
-		},
-
-		cameraSuccess: function() {
-			alert("camera win");	
-		}
 	}
 });
 

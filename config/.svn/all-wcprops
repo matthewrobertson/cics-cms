@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/svn/!svn/ver/221/trunk/cms_rails/config
+/svn/!svn/ver/277/trunk/cms_rails/config
 END
 unicorn.rb
 K 25
@@ -13,7 +13,7 @@ routes.rb
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/!svn/ver/218/trunk/cms_rails/config/routes.rb
+/svn/!svn/ver/277/trunk/cms_rails/config/routes.rb
 END
 database.yml
 K 25
@@ -36,8 +36,8 @@ END
 environment.rb
 K 25
 svn:wc:ra_dav:version-url
-V 53
-/svn/!svn/ver/4/trunk/cms_rails/config/environment.rb
+V 55
+/svn/!svn/ver/273/trunk/cms_rails/config/environment.rb
 END
 nginx.conf
 K 25
@@ -55,7 +55,7 @@ deploy.rb
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/svn/!svn/ver/184/trunk/cms_rails/config/deploy.rb
+/svn/!svn/ver/239/trunk/cms_rails/config/deploy.rb
 END
 example.database.yml
 K 25
