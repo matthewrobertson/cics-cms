@@ -17,7 +17,7 @@ class ContributionsController < ApplicationController
     @project = Project.find(params[:project_id])
     @user = User.find(params[:id])
     @project.users.delete @user
-    redirect_to @project, :alert => "The contributor was removed from the project"
+    redirect_to @user, :alert => "The contributor was removed from the project"
   end
 
 end
