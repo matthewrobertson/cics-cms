@@ -112,10 +112,7 @@
                     <i class="icon-black icon-folder-open"></i>Projects
                     <% end %>
                   </li>
-                   <li><%= link_to "#" do %>
-                    <i class="icon-black icon-picture"></i>Resources
-                    <% end %>
-                  </li>
+
                    <li><%= link_to( "/help" ) do %>
                     <i class="icon-black icon-plus"></i>Help
                     <% end %>
