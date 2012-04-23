@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/svn/!svn/ver/278/trunk/cms_rails/app/views/projects
+/svn/!svn/ver/280/trunk/cms_rails/app/views/projects
 END
 edit.html.erb
 K 25
@@ -13,7 +13,7 @@ index.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svn/!svn/ver/217/trunk/cms_rails/app/views/projects/index.html.erb
+/svn/!svn/ver/280/trunk/cms_rails/app/views/projects/index.html.erb
 END
 new.html.erb
 K 25

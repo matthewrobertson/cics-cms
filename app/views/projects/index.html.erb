@@ -25,9 +25,9 @@
 		<% @projects.each do |project| %>
 	       
 		      <tr>
-		        <td><%= link_to project.name, project_path(project) %></td>
+		        <td><%= project.name %></td>
 		        <td><%= project.users.count %></td>
-		        <td><%= link_to project.owner.full_name, user_path(project.owner) %></td>
+		        <td><%= project.owner.full_name %></td>
 		        <td><%= project.created_at.to_s(:slash_time) %></td>
 		
 		        <td>
@@ -35,7 +35,7 @@
 		          	<%= link_to 'Quit', "#", :class => 'btn btn-mini btn-danger' %>
 		          <% elsif project.pending_contributor? current_user %>
 		          	<%= link_to 'Cancel', "#", :class => 'btn btn-mini btn-primary' %>
-		          <% else %>
+		          <% elsif current_user != project.owner%>
 		            <%= link_to 'Join', (join_project_path :user_id => current_user.id, :project_id => project.id), :class => 'btn btn-mini btn-success' %>
 		          <% end %>
 		
